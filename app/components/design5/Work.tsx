@@ -1,17 +1,18 @@
 "use client";
 
 import { ZoomParallax } from "./ui/zoom-parallax";
-import { IMG } from "./images";
+import { PF } from "./images";
 import { AnimatedText } from "./anim";
 
+// 7 unique portfolio interiors — no repeats with the parallax.
 const images = [
-  { src: IMG.hero, alt: "Marquis Manor styled living room" },
-  { src: IMG.console, alt: "Wing Console" },
-  { src: IMG.chair, alt: "Rossie Chair" },
-  { src: IMG.centerTable, alt: "Buckle Center Table" },
-  { src: IMG.sideTable, alt: "Lotus Side Table" },
-  { src: IMG.bed, alt: "Marquis Bed" },
-  { src: IMG.pendant, alt: "Halo Pendant" },
+  { src: PF.livingKitchen, alt: "Open-plan living & kitchen" },
+  { src: PF.bedWhite, alt: "Serene bedroom suite" },
+  { src: PF.diningBubble, alt: "Sculptural dining room" },
+  { src: PF.bedBotanical, alt: "Botanical bedroom" },
+  { src: PF.kitchen2, alt: "Chef's kitchen" },
+  { src: PF.office1, alt: "Executive study" },
+  { src: PF.balconyLounge, alt: "Skyline balcony lounge" },
 ];
 
 export default function Work() {

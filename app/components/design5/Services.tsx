@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef } from "react";
-import { IMG } from "./images";
+import { PF } from "./images";
 import { AnimatedText, LineDivider } from "./anim";
 import { ImageTrail } from "./ui/image-trail";
 
@@ -38,15 +38,16 @@ const COLLECTIONS = [
   },
 ];
 
+// 8 unique portfolio interiors — no repeats with the parallax or Work.
 const TRAIL_IMAGES = [
-  IMG.hero,
-  IMG.scene1,
-  IMG.about1,
-  IMG.bar,
-  IMG.scene2,
-  IMG.about2,
-  IMG.console,
-  IMG.chair,
+  PF.bedSofa,
+  PF.bedMinimal,
+  PF.kids2,
+  PF.kids3,
+  PF.office2,
+  PF.office4,
+  PF.office5,
+  PF.bedGreen,
 ];
 
 export default function Services() {

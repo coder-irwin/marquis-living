@@ -7,11 +7,11 @@ import { AnimatedText } from "./anim";
 const images = [
   { src: IMG.hero, alt: "Marquis Manor styled living room" },
   { src: IMG.console, alt: "Wing Console" },
-  { src: IMG.chair, alt: "Rossie Chair" },
+  { src: IMG.chair, alt: "Cliffside Pavilion" },
   { src: IMG.centerTable, alt: "Buckle Center Table" },
-  { src: IMG.sideTable, alt: "Lotus Side Table" },
+  { src: IMG.sideTable, alt: "Sunlit Dining" },
   { src: IMG.bed, alt: "Marquis Bed" },
-  { src: IMG.pendant, alt: "Halo Pendant" },
+  { src: IMG.pendant, alt: "Coastal Living" },
 ];
 
 export default function Work() {

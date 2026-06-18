@@ -13,9 +13,9 @@ export const COLLECTIONS = [
 
 export const PIECES = [
   { name: "Wing Console", tag: "Console", img: IMG.console },
-  { name: "Halo Pendant", tag: "Accessories", img: IMG.pendant },
-  { name: "Lotus Side Table", tag: "Side Table", img: IMG.sideTable },
-  { name: "Rossie Chair", tag: "Accent Chair", img: IMG.chair },
+  { name: "Coastal Living", tag: "Living", img: IMG.pendant },
+  { name: "Sunlit Dining", tag: "Dining", img: IMG.sideTable },
+  { name: "Cliffside Pavilion", tag: "Pavilion", img: IMG.chair },
   { name: "Buckle Center Table", tag: "Center Table", img: IMG.centerTable },
   { name: "Marquis Bed", tag: "Bed", img: IMG.bed },
 ];

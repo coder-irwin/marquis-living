@@ -50,13 +50,13 @@ export const HeroParallax = ({
     springConfig
   );
   const translateY = useSpring(
-    useTransform(scrollYProgress, [0, 0.2], [-700, 300]),
+    useTransform(scrollYProgress, [0, 0.2], [-500, 120]),
     springConfig
   );
   return (
     <div
       ref={ref}
-      className="h-[300vh] py-40 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className="h-[300vh] py-20 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
       <Header />
       <motion.div
@@ -67,12 +67,12 @@ export const HeroParallax = ({
           opacity,
         }}
       >
-        <motion.div className="flex flex-row-reverse space-x-reverse space-x-8 md:space-x-20 mb-8 md:mb-20">
+        <motion.div className="flex flex-row-reverse space-x-reverse space-x-8 md:space-x-20 mb-6 md:mb-12">
           {firstRow.map((product) => (
             <ProductCard product={product} translate={translateX} key={product.title} />
           ))}
         </motion.div>
-        <motion.div className="flex flex-row mb-8 md:mb-20 space-x-8 md:space-x-20">
+        <motion.div className="flex flex-row mb-6 md:mb-12 space-x-8 md:space-x-20">
           {secondRow.map((product) => (
             <ProductCard product={product} translate={translateXReverse} key={product.title} />
           ))}
@@ -89,7 +89,7 @@ export const HeroParallax = ({
 
 export const Header = () => {
   return (
-    <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full left-0 top-0">
+    <div className="max-w-7xl relative mx-auto py-10 md:py-16 px-4 w-full left-0 top-0">
       <p className="eyebrow mb-6">The Marquis Manor Catalogue</p>
       <h1 className="display text-[clamp(2.4rem,6vw,5.5rem)] text-cream">
         Functional art, <br /> for every room.

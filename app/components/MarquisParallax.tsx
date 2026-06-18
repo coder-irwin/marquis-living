@@ -5,9 +5,9 @@ import { IMG } from "./images";
 
 const products = [
   { title: "Wing Console", link: "#work", thumbnail: IMG.console },
-  { title: "Halo Pendant", link: "#work", thumbnail: IMG.pendant },
-  { title: "Lotus Side Table", link: "#work", thumbnail: IMG.sideTable },
-  { title: "Rossie Chair", link: "#work", thumbnail: IMG.chair },
+  { title: "Coastal Living", link: "#work", thumbnail: IMG.pendant },
+  { title: "Sunlit Dining", link: "#work", thumbnail: IMG.sideTable },
+  { title: "Cliffside Pavilion", link: "#work", thumbnail: IMG.chair },
   { title: "Buckle Center Table", link: "#work", thumbnail: IMG.centerTable },
 
   { title: "Marquis Bed", link: "#work", thumbnail: IMG.bed },
@@ -19,7 +19,7 @@ const products = [
   { title: "Jungle Book", link: "#collections", thumbnail: IMG.about1 },
   { title: "Marquis Sustainable", link: "#collections", thumbnail: IMG.about2 },
   { title: "The Atelier", link: "#studio", thumbnail: IMG.cta },
-  { title: "Twin Lounge Chairs", link: "#work", thumbnail: IMG.chairPair },
+  { title: "Garden Lounge", link: "#work", thumbnail: IMG.chairPair },
   { title: "Aria Sofa", link: "#work", thumbnail: IMG.sofaTan },
 ];
 

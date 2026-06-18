@@ -13,7 +13,7 @@ const GLOCAL = {
   livingFurnished: "/glocal/living-furnished.jpg", // furnished, styled open-plan living — primary hero
   rawBuild: "/glocal/4-af932dda.png", //          same room, unfinished build — ONLY for the before/after slider
   loungeMoody: "/glocal/2-9eb1d05f.jpg", //        moody leather lounge with sideboard
-  chairPair: "/glocal/chairpair-glocal.jpg", //   pair of armchairs + side table (on cream backdrop)
+  villaPool: "/glocal/villa-pool.jpg", //          indoor–outdoor pavilion + infinity pool (glocalstudio)
 };
 
 export const IMG = {
@@ -29,16 +29,16 @@ export const IMG = {
 
   // products / furniture
   console: u("1538688525198-9b88f6f53126"), //       loft seating / console
-  pendant: u("1540932239986-30128078f3c5"), //       brass pendant light cluster
-  sideTable: u("1532372320572-cda25653a26d"), //     side table & books
-  chair: u("1567538096630-e0c55bd6374c"), //         cream tufted accent chair
+  pendant: u("1616137466211-f939a420be84"), //       living room with fireplace
+  sideTable: u("1602872030219-ad2b9a54315c"), //     bright sunlit dining room
+  chair: GLOCAL.villaPool, //                        indoor–outdoor pavilion (glocalstudio)
   centerTable: u("1499933374294-4584851497cc"), //   living room with centre table
   bed: u("1616594039964-ae9021a400a0"), //           luxury bedroom
 
   bar: u("1572116469696-31de0f17cc34"), //           moody cocktail bar interior
 
   // extra interiors — variety for the collection / parallax grids
-  chairPair: GLOCAL.chairPair, //                    armchairs + side table (glocalstudio)
+  chairPair: u("1505691938895-1758d7feb511"), //     blue coastal living room
   loungeYellow: u("1586023492125-27b2c045efd7"), //  yellow accent chair scene
   sofaTan: u("1540574163026-643ea20ade25"), //       tan leather sofa
   livingGrey: u("1493663284031-b7e3aefcae8e"), //    grey sofa living room
