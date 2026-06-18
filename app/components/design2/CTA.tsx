@@ -42,7 +42,7 @@ export default function CTA() {
           className="mt-12 flex flex-wrap items-center gap-5"
         >
           <Magnetic>
-            <a href="https://themarquismanor.com/" className="btn btn-solid" data-cursor>
+            <a href="#" className="btn btn-solid" data-cursor>
               Start an enquiry
             </a>
           </Magnetic>

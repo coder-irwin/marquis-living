@@ -41,7 +41,7 @@ export default function CTA() {
           transition={{ delay: 0.35, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           className="mt-12 flex flex-wrap items-center gap-5"
         >
-          <a href="https://themarquismanor.com/" className="btn btn-solid">
+          <a href="#" className="btn btn-solid">
             Start an enquiry
           </a>
           <a href="#collections" className="btn">
