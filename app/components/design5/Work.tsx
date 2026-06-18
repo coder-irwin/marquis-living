@@ -11,7 +11,7 @@ const images = [
   { src: IMG.centerTable, alt: "Buckle Center Table" },
   { src: IMG.sideTable, alt: "Lotus Side Table" },
   { src: IMG.bed, alt: "Marquis Bed" },
-  { src: IMG.crockery, alt: "Beetle Crockery" },
+  { src: IMG.pendant, alt: "Halo Pendant" },
 ];
 
 export default function Work() {

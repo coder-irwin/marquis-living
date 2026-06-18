@@ -7,7 +7,7 @@ import { AnimatedText } from "../anim";
 
 const PIECES = [
   { name: "Wing Console", tag: "Console", img: IMG.console },
-  { name: "Beetle Crockery", tag: "Accessories", img: IMG.crockery },
+  { name: "Halo Pendant", tag: "Accessories", img: IMG.pendant },
   { name: "Lotus Side Table", tag: "Side Table", img: IMG.sideTable },
   { name: "Rossie Chair", tag: "Accent Chair", img: IMG.chair },
   { name: "Buckle Center Table", tag: "Center Table", img: IMG.centerTable },

@@ -5,7 +5,7 @@ import { IMG } from "./images";
 
 const products = [
   { title: "Wing Console", link: "#work", thumbnail: IMG.console },
-  { title: "Beetle Crockery", link: "#work", thumbnail: IMG.crockery },
+  { title: "Halo Pendant", link: "#work", thumbnail: IMG.pendant },
   { title: "Lotus Side Table", link: "#work", thumbnail: IMG.sideTable },
   { title: "Rossie Chair", link: "#work", thumbnail: IMG.chair },
   { title: "Buckle Center Table", link: "#work", thumbnail: IMG.centerTable },
@@ -19,8 +19,8 @@ const products = [
   { title: "Jungle Book", link: "#collections", thumbnail: IMG.about1 },
   { title: "Marquis Sustainable", link: "#collections", thumbnail: IMG.about2 },
   { title: "The Atelier", link: "#studio", thumbnail: IMG.cta },
-  { title: "Step Console", link: "#work", thumbnail: IMG.console },
-  { title: "Angel Center Table", link: "#work", thumbnail: IMG.centerTable },
+  { title: "Twin Lounge Chairs", link: "#work", thumbnail: IMG.chairPair },
+  { title: "Aria Sofa", link: "#work", thumbnail: IMG.sofaTan },
 ];
 
 export default function MarquisParallax() {

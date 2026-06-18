@@ -17,7 +17,7 @@ const FLOATERS = [
   { src: IMG.console, cls: "left-[5%] top-[20%] w-[140px] md:w-[210px]", depth: 80, ratio: "aspect-[4/5]" },
   { src: IMG.chair, cls: "right-[7%] top-[16%] w-[120px] md:w-[180px]", depth: 120, ratio: "aspect-[4/5]" },
   { src: IMG.sideTable, cls: "left-[12%] bottom-[12%] w-[120px] md:w-[170px]", depth: 55, ratio: "aspect-square" },
-  { src: IMG.crockery, cls: "right-[11%] bottom-[10%] w-[120px] md:w-[160px]", depth: 100, ratio: "aspect-square" },
+  { src: IMG.pendant, cls: "right-[11%] bottom-[10%] w-[120px] md:w-[160px]", depth: 100, ratio: "aspect-square" },
 ];
 
 function Floater({

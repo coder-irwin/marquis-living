@@ -19,7 +19,7 @@ export default function Transformation() {
         </div>
 
         <Reveal>
-          <BeforeAfter before={IMG.scene2} after={IMG.hero} />
+          <BeforeAfter before={IMG.rawBuild} after={IMG.hero} />
         </Reveal>
       </div>
     </section>

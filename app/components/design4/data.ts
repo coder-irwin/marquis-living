@@ -81,7 +81,7 @@ export const ROW_3: Tile[] = [
     orientation: "landscape",
     src: IMG.console,
     video: `${VID}/3773486/3773486-hd_1920_1080_30fps.mp4`,
-    hover: IMG.crockery,
+    hover: IMG.pendant,
     category: "Shop",
     title: "Blue Console",
     href: "#",
@@ -123,7 +123,7 @@ export const LARGE_2: Tile = {
 // --- Instagram strip ---
 export const INSTAGRAM = [
   IMG.console,
-  IMG.crockery,
+  IMG.pendant,
   IMG.sideTable,
   IMG.chair,
   IMG.centerTable,

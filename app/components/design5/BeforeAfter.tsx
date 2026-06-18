@@ -52,12 +52,12 @@ export default function BeforeAfter({
         Before
       </span>
 
-      {/* handle */}
-      <div className="absolute inset-y-0 z-10" style={{ left: `${pos}%` }}>
-        <div className="absolute inset-y-0 w-px -translate-x-1/2 bg-cream" />
+      {/* handle — full-width layer so line + knob both anchor to the same pos% */}
+      <div className="pointer-events-none absolute inset-0 z-10">
+        <div className="absolute inset-y-0 w-px -translate-x-1/2 bg-cream" style={{ left: `${pos}%` }} />
         <div
-          className="absolute top-1/2 grid h-14 w-14 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full bg-cream text-bg shadow-2xl transition-transform"
-          style={{ transform: `translate(-50%,-50%) scale(${dragging ? 1.1 : 1})` }}
+          className="absolute top-1/2 grid h-14 w-14 place-items-center rounded-full bg-cream text-bg shadow-2xl transition-transform"
+          style={{ left: `${pos}%`, transform: `translate(-50%,-50%) scale(${dragging ? 1.1 : 1})` }}
         >
           <span className="text-lg">⇆</span>
         </div>
