@@ -159,6 +159,12 @@ html.lenis body {
 .btn-solid:hover {
   color: var(--color-bg);
 }
+/* sleeker, shorter pill — for tight spots like the navbar */
+.btn-sm {
+  padding: 9px 20px;
+  font-size: 0.82rem;
+  gap: 8px;
+}
 
 /* ---- Links underline ---- */
 .ul-link {

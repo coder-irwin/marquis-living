@@ -60,7 +60,7 @@ export default function Navbar() {
 
           <div className="hidden md:block">
             <Magnetic>
-              <a href="#contact" className="btn btn-solid">
+              <a href="#contact" className="btn btn-solid btn-sm">
                 Enquire now
               </a>
             </Magnetic>
