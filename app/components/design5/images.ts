@@ -36,7 +36,7 @@ export const PF = {
   bedBlue: pf("portfolio-38-02c5ab77.webp"),
   bedBotanical: pf("portfolio-44-32b2df33.webp"),
   kids1: pf("portfolio-31-9fc69750.webp"),
-  kids2: pf("portfolio-34-6ff5a7d2.webp"),
+  kids2: pf("portfolio-34-6ff5a7d2-85b8c675-2399-43e8-90c4-890bfd058f92.jpg"),
   kids3: pf("portfolio-39-c386ceee.webp"),
   diningGold: pf("portfolio-9-f383f968.webp"),
   diningNavy: pf("portfolio-26-a24408ad.webp"),
