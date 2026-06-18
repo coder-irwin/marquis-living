@@ -112,6 +112,14 @@ html.lenis body {
     transform: translateX(-50%);
   }
 }
+@keyframes marquee-rev {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
 .marquee-track {
   display: inline-flex;
   white-space: nowrap;
@@ -164,6 +172,21 @@ html.lenis body {
   padding: 9px 20px;
   font-size: 0.82rem;
   gap: 8px;
+}
+
+/* design2: custom cursor — hide the native one on pointer devices */
+@media (min-width: 768px) {
+  .hide-cursor,
+  .hide-cursor * {
+    cursor: none !important;
+  }
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
 }
 
 /* ---- Links underline ---- */
