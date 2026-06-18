@@ -10,7 +10,6 @@ import HoverList from "../components/design2/HoverList";
 import TiltGallery from "../components/design2/TiltGallery";
 import KineticType from "../components/design2/KineticType";
 import HorizontalScroll from "../components/design2/HorizontalScroll";
-import Design2Zoom from "../components/design2/Design2Zoom";
 import Manifesto from "../components/design2/Manifesto";
 import MarqueeColumns from "../components/design2/MarqueeColumns";
 import StackingCards from "../components/design2/StackingCards";
@@ -53,9 +52,7 @@ export default function Design2Page() {
         <KineticType />
         {/* 08 — pinned horizontal gallery */}
         <HorizontalScroll />
-        {/* 09 — zoom-parallax reveal */}
-        <Design2Zoom />
-        {/* 10 — scroll-scrubbed manifesto */}
+        {/* 09 — scroll-scrubbed manifesto */}
         <Manifesto />
         {/* 11 — parallax image columns */}
         <MarqueeColumns />
