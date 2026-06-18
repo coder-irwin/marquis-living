@@ -50,7 +50,7 @@ export function AnimatedText({
   return (
     <MotionTag ref={ref} className={className} aria-label={text}>
       {words.map((word, i) => (
-        <span key={i} style={{ display: "inline-block", overflow: "hidden", verticalAlign: "top" }}>
+        <span key={i} style={{ display: "inline-block", overflow: "hidden", verticalAlign: "top", paddingBottom: "0.2em" }}>
           <motion.span
             style={{ display: "inline-block", willChange: "transform" }}
             initial={{ y: "110%" }}

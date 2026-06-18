@@ -5,7 +5,7 @@ import ScrollExpandMedia from './ui/scroll-expansion-hero';
 import { IMG } from './images';
 
 const VIDEO_SRC =
-  'https://videos.pexels.com/video-files/7578552/7578552-uhd_2560_1440_30fps.mp4';
+  '/design5bgvideo.mp4';
 
 export default function MarquisHero() {
   useEffect(() => {
