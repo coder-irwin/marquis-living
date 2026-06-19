@@ -242,3 +242,149 @@ html.lenis body {
   mix-blend-mode: multiply;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
+
+/* =====================================================================
+   Akaash · Design 2 — "Aakash" (आकाश, the sky)
+   A scroll-driven journey through Indian storytelling. Self-contained,
+   dark-canvas aesthetic; everything below is namespaced under .d2 so it
+   never bleeds into the shared light theme used by the other designs.
+   ===================================================================== */
+.d2 {
+  --ink: #0a0612;          /* deep night */
+  --ink-2: #140a24;        /* indigo-violet */
+  --saffron: #ff8a2b;      /* kesar */
+  --marigold: #ffc24b;     /* genda gold */
+  --magenta: #ff3d8b;      /* gulal pink */
+  --peacock: #1fb6a6;      /* mor / teal */
+  --indigo: #6a5cff;       /* twilight */
+  --paper: #f5ecd8;        /* warm parchment */
+  --paper-dim: rgba(245, 236, 216, 0.62);
+
+  position: relative;
+  background: var(--ink);
+  color: var(--paper);
+  font-family: var(--font-inter), system-ui, sans-serif;
+  overflow-x: hidden;
+}
+.d2 ::selection {
+  background: var(--marigold);
+  color: var(--ink);
+}
+.d2 .serif {
+  font-family: var(--font-fraunces), Georgia, serif;
+}
+.d2 .display {
+  font-family: var(--font-fraunces), Georgia, serif;
+  font-weight: 300;
+  line-height: 0.9;
+  letter-spacing: -0.03em;
+}
+.d2 .eyebrow {
+  font-size: 0.72rem;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: var(--marigold);
+}
+
+/* Warm gradient text — kesar → gulal → twilight */
+.d2 .gold-text {
+  background: linear-gradient(100deg, var(--marigold), var(--saffron) 38%, var(--magenta) 72%, var(--indigo));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Aurora blobs that breathe behind the hero */
+@keyframes d2-aurora {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+  33% { transform: translate3d(6%, -4%, 0) scale(1.15); }
+  66% { transform: translate3d(-5%, 5%, 0) scale(0.92); }
+}
+.d2-aurora {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.55;
+  mix-blend-mode: screen;
+  animation: d2-aurora 18s ease-in-out infinite;
+  will-change: transform;
+}
+
+/* Slow-turning mandala */
+@keyframes d2-spin { to { transform: rotate(360deg); } }
+@keyframes d2-spin-rev { to { transform: rotate(-360deg); } }
+.d2-spin { animation: d2-spin 60s linear infinite; }
+.d2-spin-rev { animation: d2-spin-rev 90s linear infinite; }
+
+/* Twinkle for static accent stars */
+@keyframes d2-twinkle {
+  0%, 100% { opacity: 0.25; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.15); }
+}
+
+/* A hairline that draws itself in */
+.d2-rule {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--paper-dim), transparent);
+}
+
+.d2-link {
+  position: relative;
+}
+.d2-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.45s cubic-bezier(0.65, 0, 0.35, 1);
+}
+.d2-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Glowing pill button */
+.d2-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 28px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  color: var(--ink);
+  background: linear-gradient(100deg, var(--marigold), var(--saffron));
+  box-shadow: 0 0 0 0 rgba(255, 162, 75, 0.5);
+  transition: box-shadow 0.5s ease, transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.d2-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 40px -8px rgba(255, 138, 43, 0.6);
+}
+.d2-btn-ghost {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 28px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  color: var(--paper);
+  border: 1px solid rgba(245, 236, 216, 0.28);
+  transition: border-color 0.4s ease, color 0.4s ease, background 0.4s ease;
+}
+.d2-btn-ghost:hover {
+  border-color: var(--marigold);
+  color: var(--marigold);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .d2-aurora,
+  .d2-spin,
+  .d2-spin-rev { animation: none; }
+}
