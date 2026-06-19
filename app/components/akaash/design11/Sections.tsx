@@ -1,4 +1,5 @@
-import { U, WORKS, SERVICES } from "./data";
+import { WORKS, SERVICES } from "./data";
+import { PHOTOS } from "./media";
 
 /* Horizontal scroll-driven "Selected Works" gallery (home). */
 export function SelectedWorks() {
@@ -22,7 +23,7 @@ export function SelectedWorks() {
               <article className="work-card" key={w.title}>
                 <div className="wc-img">
                   <span className="wc-idx">{String(i + 1).padStart(2, "0")}</span>
-                  <img src={U(w.id, 1100)} alt={w.title} loading="lazy" />
+                  <img src={PHOTOS[i % PHOTOS.length]} alt={w.title} loading="lazy" />
                 </div>
                 <div className="wc-meta">
                   <h3>{w.title}</h3>
@@ -61,13 +62,13 @@ export function BlueprintReveal() {
         </div>
         <div className="ba" data-cursor>
           <div className="ba-layer ba-after">
-            <img src={U("photo-1600585154340-be6161a56a0c", 1600)} alt="Final render" />
+            <img src={PHOTOS[0]} alt="Final render" />
             <span className="ba-label l-after">Render</span>
           </div>
           <div className="ba-layer ba-before">
             <div className="ba-blue" />
             <div className="ba-grid" />
-            <img src={U("photo-1600585154340-be6161a56a0c", 1600)} alt="Blueprint" />
+            <img src={PHOTOS[0]} alt="Blueprint" />
             <span className="ba-label l-before">Blueprint</span>
           </div>
           <div className="ba-handle"><div className="ba-knob" /></div>
@@ -104,7 +105,7 @@ export function ServicesBlock({ heading = true }: { heading?: boolean }) {
         <div className="svc-layout">
           <div className="svc-visual">
             {SERVICES.map((s, i) => (
-              <img key={s.title} data-index={i} className={i === 0 ? "active" : ""} src={U(s.img, 1100)} alt={s.title} loading="lazy" />
+              <img key={s.title} data-index={i} className={i === 0 ? "active" : ""} src={PHOTOS[(i * 3) % PHOTOS.length]} alt={s.title} loading="lazy" />
             ))}
           </div>
           <div className="svc-list">

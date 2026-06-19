@@ -1,6 +1,7 @@
 import { BASE, PROCESS } from "./data";
-import { SelectedWorks, BlueprintReveal, ServicesBlock } from "./Sections";
+import { SelectedWorks, BlueprintReveal } from "./Sections";
 import { MaskedShowreel, GalleryWall, VideoBand, PhotoMarquee } from "./Showcase";
+import { ServicesCards, WhyShowcase } from "./Premium";
 import { PHOTOS, VIDEO_BAND, SHOWREEL } from "./media";
 import { ContactForm } from "./Shell";
 
@@ -106,8 +107,11 @@ export default function Home() {
         sub="Cinematic walkthroughs and product films, paced and scored so a space reveals itself the way it would in person."
       />
 
-      {/* SERVICES */}
-      <ServicesBlock />
+      {/* SERVICES — dark cards */}
+      <ServicesCards />
+
+      {/* WHY — dark big-number showcase */}
+      <WhyShowcase />
 
       {/* PROCESS */}
       <section className="process">

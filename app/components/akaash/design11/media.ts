@@ -42,10 +42,11 @@ export const HERO_SHOTS = [
 
 export const EXTRA = ["/glocal/living-furnished.jpg", "/glocal/villa-pool.jpg"];
 
-/** Studio showreel that ships in /public, plus calm interior b-roll from Pexels. */
+/** Studio showreel that ships in /public. We point every band at the LOCAL file
+ *  so videos always play — external (Pexels/Unsplash) hosts are unreliable here. */
 export const SHOWREEL = "/design5bgvideo.mp4";
-export const VIDEO_BAND = "https://videos.pexels.com/video-files/7578548/7578548-uhd_2560_1440_30fps.mp4";
-export const VIDEO_BAND_2 = "https://videos.pexels.com/video-files/3773486/3773486-hd_1920_1080_30fps.mp4";
+export const VIDEO_BAND = SHOWREEL;
+export const VIDEO_BAND_2 = SHOWREEL;
 
 /** Pick n photos starting at an offset (wraps), for varied section galleries. */
 export const pick = (n: number, offset = 0) =>

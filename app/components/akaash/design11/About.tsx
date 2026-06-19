@@ -1,6 +1,8 @@
-import { U, VALUES, TIMELINE, TEAM } from "./data";
+import { VALUES, TIMELINE, TEAM } from "./data";
 import { VideoBand, PhotoMarquee } from "./Showcase";
 import { PHOTOS, VIDEO_BAND } from "./media";
+
+const initials = (name: string) => name.split(" ").map((p) => p[0]).join("");
 
 export default function About() {
   return (
@@ -13,13 +15,13 @@ export default function About() {
             <p>Marquis Manor is a small studio with a single obsession: light. We&apos;ve spent over a decade learning how daylight behaves in a space — and how to put it back, render after render.</p>
             <span className="crumbs"><b>Marquis Manor</b> / About</span>
           </div>
-          <div className="phero-band img-reveal"><img src={U("photo-1600210492493-0946911123ea", 1900)} alt="Studio interior" /></div>
+          <div className="phero-band img-reveal"><img src={PHOTOS[0]} alt="Studio interior" /></div>
         </div>
       </section>
 
       <section className="story">
         <div className="wrap story-grid">
-          <div className="s-img img-reveal"><img src={U("photo-1505691938895-1758d7feb511", 1200)} alt="Designer at work" /></div>
+          <div className="s-img img-reveal"><img src={PHOTOS[6]} alt="Designer at work" /></div>
           <div>
             <span className="eyebrow">Our story</span>
             <h2>Started after hours.<br />Grew on <em>trust</em>.</h2>
@@ -80,7 +82,7 @@ export default function About() {
           <div className="team-grid stagger-parent">
             {TEAM.map((m) => (
               <div className="member reveal" key={m.name}>
-                <div className="m-img"><img src={U(m.img, 700)} alt={m.name} loading="lazy" /></div>
+                <div className="m-img m-mono"><span>{initials(m.name)}</span></div>
                 <h3>{m.name}</h3>
                 <p>{m.role}</p>
               </div>

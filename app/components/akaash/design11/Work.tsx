@@ -1,4 +1,4 @@
-import { U, WORKS } from "./data";
+import { WORKS } from "./data";
 import { BlueprintReveal } from "./Sections";
 import { PhotoMarquee, VideoBand } from "./Showcase";
 import { PHOTOS, VIDEO_BAND_2 } from "./media";
@@ -39,7 +39,7 @@ export default function Work() {
           <div className="pgrid">
             {WORKS.map((w, i) => (
               <article className={`pcard ${SIZES[i % SIZES.length]} img-reveal`} data-cat={w.cat} key={w.title} data-cursor>
-                <div className="pc-img"><img src={U(w.id, 1300)} alt={w.title} loading="lazy" /></div>
+                <div className="pc-img"><img src={PHOTOS[i % PHOTOS.length]} alt={w.title} loading="lazy" /></div>
                 <div className="pc-over">
                   <h3>{w.title}</h3>
                   <span>{w.tag} · {w.place}</span>

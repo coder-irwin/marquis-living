@@ -1,4 +1,4 @@
-import { U, PROCESS } from "./data";
+import { PROCESS } from "./data";
 import { ServicesBlock, BlueprintReveal } from "./Sections";
 import { GalleryWall, VideoBand, PhotoMarquee } from "./Showcase";
 import { PHOTOS, VIDEO_BAND } from "./media";
@@ -14,7 +14,7 @@ export default function Services() {
             <p>Whatever stage you&apos;re at — a napkin sketch or a finished set of drawings — there&apos;s a service here to carry it the rest of the way to photoreal.</p>
             <span className="crumbs"><b>Marquis Manor</b> / Services</span>
           </div>
-          <div className="phero-band img-reveal"><img src={U("photo-1600566753086-00f18fb6b3ea", 1900)} alt="Render workspace" /></div>
+          <div className="phero-band img-reveal"><img src={PHOTOS[9]} alt="Render workspace" /></div>
         </div>
       </section>
 
