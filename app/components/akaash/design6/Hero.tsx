@@ -2,13 +2,13 @@
 
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { HEADLINE, HERO_IMG } from "./data";
+import { HEADLINE, HERO_VIDEO, HERO_POSTER } from "./data";
 
 /**
  * Hero — full-width, oversized bold sans headline revealed word-by-word (the
  * signature motion borrowed in spirit from the studio reference), over a light
- * airy field, followed by a full-bleed interior that parallaxes on scroll.
- * Copy is entirely Marquis Manor; imagery is Unsplash (no glocal assets).
+ * airy field, followed by the studio showreel playing muted/looped in a large
+ * rounded frame that parallaxes on scroll. Copy is entirely Marquis Manor.
  */
 const container = {
   hidden: {},
@@ -82,18 +82,25 @@ export default function Hero() {
 
       <div className="container mt-14 md:mt-20">
         <motion.div
-          className="relative aspect-[16/8] w-full overflow-hidden rounded-2xl"
+          className="relative aspect-[16/8] w-full overflow-hidden rounded-2xl shadow-[0_50px_120px_-50px_rgba(22,24,26,0.45)]"
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.1, delay: 1.1, ease: [0.22, 1, 0.36, 1] }}
         >
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <motion.img
-            src={HERO_IMG}
-            alt="A calm, neutral living room by Marquis Manor"
+          <motion.video
             className="h-full w-full object-cover"
             style={{ scale: imgScale, y: imgY }}
+            src={HERO_VIDEO}
+            poster={HERO_POSTER}
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            aria-label="Marquis Manor studio showreel"
           />
+          {/* soft top scrim keeps the frame feeling light and editorial */}
+          <div className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-black/15 to-transparent" />
         </motion.div>
       </div>
     </section>

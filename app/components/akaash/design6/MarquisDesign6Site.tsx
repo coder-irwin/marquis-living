@@ -1,6 +1,7 @@
 import Nav from "./Nav";
 import Hero from "./Hero";
 import Services from "./Services";
+import Showcase from "./Showcase";
 import Portfolio from "./Portfolio";
 import Features from "./Features";
 import Footer from "./Footer";
@@ -14,6 +15,7 @@ export default function MarquisDesign6Site() {
       <main>
         <Hero />
         <Services />
+        <Showcase />
         <Portfolio />
         <Features />
       </main>

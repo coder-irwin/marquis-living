@@ -1,13 +1,14 @@
 // Akaash · Design 6 — "Atelier" content + imagery for Marquis Manor.
 //
-// IMPORTANT: this design deliberately uses ONLY the Unsplash-sourced interior
-// photos from the shared IMG map (the `u(...)` entries). It does NOT use any
-// of the /glocal or /glocal-portfolio images, since those were pulled from
-// glocalstudio.in — the site we took layout/motion inspiration from but must
-// not borrow assets from. All copy below is original Marquis Manor wording.
-import { IMG } from "../../images";
+// Per the latest direction, this design uses the client's own portfolio
+// photography (/glocal-portfolio) and the studio showreel video to give it a
+// luxury feel. All copy below is original Marquis Manor wording.
 
-export const HERO_IMG = IMG.cta;     // neutral beige living room (Unsplash)
+const P = "/glocal-portfolio";
+
+// Studio showreel — plays muted/looped in the hero frame.
+export const HERO_VIDEO = "/design5bgvideo.mp4";
+export const HERO_POSTER = `${P}/portfolio-2-2204562c.webp`;
 
 // hero headline, revealed word-by-word
 export const HEADLINE = ["Interiors", "made", "to", "be", "lived", "in."];
@@ -22,14 +23,17 @@ export const SERVICES = [
   { no: "06", t: "Consultation", d: "A focused session for a single room or a second opinion — our eyes on your space." },
 ];
 
-// Portfolio — six Unsplash interiors (no glocal assets).
+// A single full-bleed hero of finished work, between services and the grid.
+export const FEATURE_IMG = `${P}/portfolio-23-11724ad1.webp`;
+
+// Portfolio — the studio's own completed interiors.
 export const PORTFOLIO = [
-  { src: IMG.about1, t: "Shelved Living Room" },
-  { src: IMG.bed, t: "Principal Bedroom" },
-  { src: IMG.sideTable, t: "Sunlit Dining" },
-  { src: IMG.bar, t: "Evening Bar" },
-  { src: IMG.sofaTan, t: "Tan Lounge" },
-  { src: IMG.livingFireplace, t: "Fireside Living" },
+  { src: `${P}/portfolio-2-2204562c.webp`, t: "Open-plan Living" },
+  { src: `${P}/portfolio-11-32dcb15a.webp`, t: "Principal Bedroom" },
+  { src: `${P}/portfolio-17-4a7a6209.webp`, t: "Dining Room" },
+  { src: `${P}/portfolio-30-2e527f6c.webp`, t: "Garden Lounge" },
+  { src: `${P}/portfolio-44-32b2df33.webp`, t: "Study & Library" },
+  { src: `${P}/portfolio-9-f383f968.webp`, t: "Kitchen" },
 ];
 
 // Why Marquis Manor — four feature points with teal checks.
