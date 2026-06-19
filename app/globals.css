@@ -388,3 +388,122 @@ html.lenis body {
   .d2-spin,
   .d2-spin-rev { animation: none; }
 }
+
+/* =====================================================================
+   Akaash · Design 3 — "Ink & Atelier" (Marquis Manor)
+   A warm-paper, editorial interiors site. The hero uses the InkReveal
+   canvas (app/components/ui/ink-reveal.tsx): the page reads as blank
+   warm paper, and the visitor's cursor inks it away to reveal the room
+   beneath. Everything is namespaced under .d3.
+   ===================================================================== */
+.d3 {
+  --paper: #f7f2e9;        /* warm hand-made paper */
+  --paper-2: #efe7d8;
+  --ink: #16120c;          /* near-black ink */
+  --ink-soft: #5a5145;     /* faded ink */
+  --ink-line: rgba(22, 18, 12, 0.16);
+  --vermilion: #b23a1e;    /* a single red-ink accent */
+  --vermilion-soft: #d8603f;
+
+  position: relative;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-inter), system-ui, sans-serif;
+  overflow-x: hidden;
+}
+.d3 ::selection {
+  background: var(--ink);
+  color: var(--paper);
+}
+.d3 .serif {
+  font-family: var(--font-fraunces), Georgia, serif;
+}
+.d3 .display {
+  font-family: var(--font-fraunces), Georgia, serif;
+  font-weight: 300;
+  line-height: 0.92;
+  letter-spacing: -0.025em;
+}
+.d3 .eyebrow {
+  font-size: 0.72rem;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: var(--vermilion);
+}
+.d3 .ink-text {
+  background: linear-gradient(100deg, var(--ink), var(--vermilion) 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* hand-drawn underline that wipes in on hover */
+.d3-link {
+  position: relative;
+}
+.d3-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.45s cubic-bezier(0.65, 0, 0.35, 1);
+}
+.d3-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.d3-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 28px;
+  border-radius: 2px;
+  font-size: 0.9rem;
+  color: var(--paper);
+  background: var(--ink);
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), background 0.4s ease;
+}
+.d3-btn:hover {
+  transform: translateY(-2px);
+  background: var(--vermilion);
+}
+.d3-btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 28px;
+  border-radius: 2px;
+  font-size: 0.9rem;
+  color: var(--ink);
+  border: 1px solid var(--ink-line);
+  transition: border-color 0.4s ease, color 0.4s ease;
+}
+.d3-btn-ghost:hover {
+  border-color: var(--vermilion);
+  color: var(--vermilion);
+}
+
+/* the "move to reveal" cue bobs gently */
+@keyframes d3-bob {
+  0%, 100% { transform: translateY(0); opacity: 0.7; }
+  50% { transform: translateY(6px); opacity: 1; }
+}
+.d3-bob { animation: d3-bob 2.2s ease-in-out infinite; }
+
+/* a soft ink blot used as a section ornament */
+@keyframes d3-blot {
+  0%, 100% { transform: scale(1) rotate(0deg); }
+  50% { transform: scale(1.06) rotate(8deg); }
+}
+.d3-blot { animation: d3-blot 14s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .d3-bob,
+  .d3-blot { animation: none; }
+}
