@@ -2,8 +2,10 @@
 
 import { useEffect, useRef, type ReactNode } from "react";
 import { usePathname } from "next/navigation";
+import Lenis from "lenis";
 import { D11_CSS } from "./styles";
 import { BASE, NAV_LINKS } from "./data";
+import { SHOWREEL, PHOTOS } from "./media";
 
 /* ----------------------------------------------------------------------------
  * Shared CTA band — "let's begin in daylight".
@@ -11,6 +13,10 @@ import { BASE, NAV_LINKS } from "./data";
 export function CTA() {
   return (
     <section className="cta">
+      <video className="cta-video" data-autoplay muted loop playsInline preload="none" poster={PHOTOS[6]}>
+        <source src={SHOWREEL} type="video/mp4" />
+      </video>
+      <div className="cta-veil" />
       <div className="wrap cta-in">
         <span className="eyebrow">Start a project</span>
         <h2 className="display">
@@ -131,6 +137,8 @@ export default function Shell({ children, cta = true }: { children: ReactNode; c
     const worksSec = root.querySelector<HTMLElement>(".works-h");
     const worksTrack = root.querySelector<HTMLElement>(".works-track");
     const worksBar = root.querySelector<HTMLElement>(".works-progress i");
+    const parEls = Array.from(root.querySelectorAll<HTMLElement>("[data-par]"));
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
     const layoutWorks = () => {
       if (!worksSec || !worksTrack) return;
@@ -155,12 +163,42 @@ export default function Shell({ children, cta = true }: { children: ReactNode; c
         worksTrack.style.transform = `translateX(${-p * dist}px)`;
         if (worksBar) worksBar.style.width = `${p * 100}%`;
       }
+      if (!reduce && window.innerWidth > 760) {
+        parEls.forEach((el) => {
+          const speed = parseFloat(el.dataset.par || "0");
+          const r = el.getBoundingClientRect();
+          const centre = r.top + r.height / 2;
+          const prog = (centre - window.innerHeight / 2) / window.innerHeight;
+          el.style.transform = `translate3d(0, ${(-prog * speed).toFixed(1)}px, 0)`;
+        });
+      }
     };
     layoutWorks();
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     window.addEventListener("resize", layoutWorks);
     cleanups.push(() => { window.removeEventListener("scroll", onScroll); window.removeEventListener("resize", layoutWorks); });
+
+    /* --- Lenis smooth scroll (drives the scroll-based effects above) --- */
+    if (!reduce) {
+      const lenis = new Lenis({ duration: 1.1, smoothWheel: true });
+      lenis.on("scroll", onScroll);
+      let lenisRaf = 0;
+      const raf = (time: number) => { lenis.raf(time); lenisRaf = requestAnimationFrame(raf); };
+      lenisRaf = requestAnimationFrame(raf);
+      cleanups.push(() => { cancelAnimationFrame(lenisRaf); lenis.destroy(); });
+    }
+
+    /* --- lazy play/pause videos (only what's on screen) --- */
+    const vio = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        const v = e.target as HTMLVideoElement;
+        if (e.isIntersecting) v.play().catch(() => {});
+        else v.pause();
+      });
+    }, { threshold: 0.25 });
+    root.querySelectorAll<HTMLVideoElement>("video[data-autoplay]").forEach((v) => vio.observe(v));
+    cleanups.push(() => vio.disconnect());
 
     /* --- custom cursor + magnetic --- */
     if (!isCoarse) {

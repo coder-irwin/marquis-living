@@ -1,5 +1,7 @@
 import { U, BASE, PROCESS } from "./data";
 import { SelectedWorks, BlueprintReveal, ServicesBlock } from "./Sections";
+import { MaskedShowreel, GalleryWall, VideoBand, PhotoMarquee } from "./Showcase";
+import { PHOTOS, VIDEO_BAND } from "./media";
 import { ContactForm } from "./Shell";
 import InfiniteGallery from "../../ui/3d-gallery-photography";
 
@@ -69,15 +71,24 @@ export default function Home() {
         </div>
       </section>
 
-      {/* MANIFESTO */}
+      {/* MANIFESTO — copy flanked by drifting real photos */}
       <section className="manifesto">
         <div className="wrap manifesto-grid">
-          <span className="lab reveal">The idea</span>
-          <h2 className="reveal">
-            A render is only honest when the light is. <span className="mute">So we begin every project with the sun</span> — its angle, its hour, its season — and let everything else fall into place around it. <em>The result feels less rendered, more remembered.</em>
-          </h2>
+          <div className="manifesto-copy">
+            <span className="lab reveal">The idea</span>
+            <h2 className="reveal">
+              A render is only honest when the light is. <span className="mute">So we begin every project with the sun</span> — its angle, its hour, its season — and let everything else fall into place around it. <em>The result feels less rendered, more remembered.</em>
+            </h2>
+          </div>
+          <div className="manifesto-media">
+            <div className="mfp mfp-a img-reveal" data-par="-36"><img src={PHOTOS[4]} alt="Sunlit interior" loading="lazy" /></div>
+            <div className="mfp mfp-b img-reveal" data-par="44"><img src={PHOTOS[7]} alt="Daylit living space" loading="lazy" /></div>
+          </div>
         </div>
       </section>
+
+      {/* PHOTO MARQUEE seam */}
+      <PhotoMarquee offset={0} reverse />
 
       {/* STATS */}
       <section className="stats">
@@ -91,11 +102,26 @@ export default function Home() {
         </div>
       </section>
 
+      {/* TEXT-MASKED SHOWREEL */}
+      <MaskedShowreel />
+
       {/* SELECTED WORKS — horizontal */}
       <SelectedWorks />
 
+      {/* PARALLAX GALLERY WALL */}
+      <GalleryWall />
+
       {/* BLUEPRINT -> RENDER */}
       <BlueprintReveal />
+
+      {/* FULL-BLEED VIDEO BAND */}
+      <VideoBand
+        src={VIDEO_BAND}
+        poster={PHOTOS[2]}
+        eyebrow="Vision in motion"
+        title={<>Stills move.<br />Spaces <em>breathe</em>.</>}
+        sub="Cinematic walkthroughs and product films, paced and scored so a space reveals itself the way it would in person."
+      />
 
       {/* SERVICES */}
       <ServicesBlock />
@@ -116,6 +142,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* PHOTO MARQUEE seam */}
+      <PhotoMarquee offset={12} />
 
       {/* TESTIMONIAL */}
       <section className="quote-sec">
