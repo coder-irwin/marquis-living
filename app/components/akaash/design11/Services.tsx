@@ -1,5 +1,7 @@
 import { U, PROCESS } from "./data";
 import { ServicesBlock, BlueprintReveal } from "./Sections";
+import { GalleryWall, VideoBand, PhotoMarquee } from "./Showcase";
+import { PHOTOS, VIDEO_BAND } from "./media";
 
 export default function Services() {
   return (
@@ -22,7 +24,7 @@ export default function Services() {
         <div className="wrap">
           <span className="eyebrow">How it works</span>
           <h2 className="display">A calm, <em>predictable</em> process.</h2>
-          <div className="process-grid">
+          <div className="process-grid stagger-parent">
             {PROCESS.map((p) => (
               <div className="pstep reveal" key={p.n}>
                 <div className="pn">{p.n}</div>
@@ -33,6 +35,18 @@ export default function Services() {
           </div>
         </div>
       </section>
+
+      <VideoBand
+        src={VIDEO_BAND}
+        poster={PHOTOS[2]}
+        eyebrow="The output"
+        title={<>Delivered the way<br />you&apos;ll <em>use</em> it.</>}
+        sub="Print-ready stills, web crops, animation masters and interactive tours — every format, colour-managed and on time."
+      />
+
+      <GalleryWall />
+
+      <PhotoMarquee offset={9} reverse />
 
       <BlueprintReveal />
     </>

@@ -343,6 +343,7 @@ export default function Shell({ children, cta = true }: { children: ReactNode; c
     <div className="d11" ref={rootRef}>
       <style dangerouslySetInnerHTML={{ __html: D11_CSS }} />
 
+      <div className="grain" aria-hidden="true" />
       <div className="cursor-dot" />
       <div className="cursor-ring" />
       <div className="scroll-prog" />

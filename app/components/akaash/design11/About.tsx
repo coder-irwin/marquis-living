@@ -1,4 +1,6 @@
 import { U, VALUES, TIMELINE, TEAM } from "./data";
+import { VideoBand, PhotoMarquee } from "./Showcase";
+import { PHOTOS, VIDEO_BAND } from "./media";
 
 export default function About() {
   return (
@@ -31,7 +33,7 @@ export default function About() {
         <div className="wrap">
           <span className="eyebrow">What we believe</span>
           <h2 className="display" style={{ marginTop: 16 }}>Three things, held closely.</h2>
-          <div className="values-grid">
+          <div className="values-grid stagger-parent">
             {VALUES.map((v) => (
               <div className="value reveal" key={v.h}>
                 <div className="vn">{v.n}</div>
@@ -42,6 +44,14 @@ export default function About() {
           </div>
         </div>
       </section>
+
+      <VideoBand
+        src={VIDEO_BAND}
+        poster={PHOTOS[5]}
+        eyebrow="Inside the studio"
+        title={<>Light, studied<br />on <em>repeat</em>.</>}
+        sub="Every project opens with a site-specific daylight study — orientation, hour and season — so the mood is grounded in something real."
+      />
 
       <section className="timeline">
         <div className="wrap">
@@ -61,11 +71,13 @@ export default function About() {
         </div>
       </section>
 
+      <PhotoMarquee offset={4} />
+
       <section className="team">
         <div className="wrap">
           <span className="eyebrow">The people</span>
           <h2 className="display" style={{ marginTop: 16 }}>Small studio, <em>senior</em> hands.</h2>
-          <div className="team-grid">
+          <div className="team-grid stagger-parent">
             {TEAM.map((m) => (
               <div className="member reveal" key={m.name}>
                 <div className="m-img"><img src={U(m.img, 700)} alt={m.name} loading="lazy" /></div>

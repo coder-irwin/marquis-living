@@ -1,5 +1,7 @@
 import { U, WORKS } from "./data";
 import { BlueprintReveal } from "./Sections";
+import { PhotoMarquee, VideoBand } from "./Showcase";
+import { PHOTOS, VIDEO_BAND_2 } from "./media";
 
 const FILTERS = [
   { k: "all", label: "All work" },
@@ -23,12 +25,13 @@ export default function Work() {
             <p>A cross-section of recent projects — residential, commercial and hospitality — each one lit from a real, site-specific daylight study.</p>
             <span className="crumbs"><b>Marquis Manor</b> / Work</span>
           </div>
+          <div className="phero-band img-reveal"><img src={PHOTOS[1]} alt="Featured Marquis Manor project" /></div>
         </div>
       </section>
 
       <section>
         <div className="wrap">
-          <div className="work-filter">
+          <div className="work-filter reveal">
             {FILTERS.map((f, i) => (
               <button className={`fbtn${i === 0 ? " on" : ""}`} data-filter={f.k} key={f.k}>{f.label}</button>
             ))}
@@ -46,6 +49,16 @@ export default function Work() {
           </div>
         </div>
       </section>
+
+      <PhotoMarquee offset={6} />
+
+      <VideoBand
+        src={VIDEO_BAND_2}
+        poster={PHOTOS[8]}
+        eyebrow="On site, in motion"
+        title={<>Every project,<br />a <em>walkthrough</em>.</>}
+        sub="Beyond stills, most projects ship with a cinematic flythrough — the fastest way to feel a space before a brick is laid."
+      />
 
       <BlueprintReveal />
     </>

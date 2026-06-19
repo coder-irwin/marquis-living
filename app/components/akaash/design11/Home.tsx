@@ -1,28 +1,13 @@
-import { U, BASE, PROCESS } from "./data";
+import { BASE, PROCESS } from "./data";
 import { SelectedWorks, BlueprintReveal, ServicesBlock } from "./Sections";
 import { MaskedShowreel, GalleryWall, VideoBand, PhotoMarquee } from "./Showcase";
-import { PHOTOS, VIDEO_BAND } from "./media";
+import { PHOTOS, VIDEO_BAND, SHOWREEL } from "./media";
 import { ContactForm } from "./Shell";
-import InfiniteGallery from "../../ui/3d-gallery-photography";
-
-/** Bright, architectural frames for the hero's live 3D gallery. */
-const HERO_GALLERY = [
-  "photo-1600585154340-be6161a56a0c",
-  "photo-1600607687939-ce8a6c25118c",
-  "photo-1618221195710-dd6b41faaea6",
-  "photo-1600566753190-17f0baa2a6c3",
-  "photo-1600210492493-0946911123ea",
-  "photo-1616486338812-3dadae4b4ace",
-  "photo-1615874959474-d609969a20ed",
-  "photo-1600573472550-8090b5e0745e",
-  "photo-1505691938895-1758d7feb511",
-  "photo-1600566753086-00f18fb6b3ea",
-].map((id) => ({ src: U(id, 900), alt: "Marquis Manor render" }));
 
 export default function Home() {
   return (
     <>
-      {/* HERO */}
+      {/* HERO — kinetic headline + cinematic showreel video */}
       <section className="hero">
         <div className="wrap">
           <div className="hero-grid">
@@ -47,15 +32,13 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="hero-figure hero-3d-wrap">
-            <InfiniteGallery
-              images={HERO_GALLERY}
-              speed={1}
-              visibleCount={10}
-              className="hero-3d"
-            />
+          <div className="hero-figure hero-video-wrap img-reveal">
+            <video className="hero-video" data-autoplay muted loop playsInline preload="none" poster={PHOTOS[2]}>
+              <source src={SHOWREEL} type="video/mp4" />
+            </video>
+            <div className="hero-video-veil" />
             <div className="hero-stat"><b>11</b><span>Years in light</span></div>
-            <div className="hero-tag"><b>Live 3D gallery</b> — scroll, drag or let it drift</div>
+            <div className="hero-tag"><span className="hero-play" />Studio showreel — Marquis Manor ’26</div>
           </div>
         </div>
 
@@ -131,7 +114,7 @@ export default function Home() {
         <div className="wrap">
           <span className="eyebrow">How it works</span>
           <h2 className="display">Four steps, <em>one</em> obsession.</h2>
-          <div className="process-grid">
+          <div className="process-grid stagger-parent">
             {PROCESS.map((p) => (
               <div className="pstep reveal" key={p.n}>
                 <div className="pn">{p.n}</div>

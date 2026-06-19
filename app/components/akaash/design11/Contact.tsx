@@ -1,4 +1,5 @@
-import { U } from "./data";
+import { PhotoMarquee } from "./Showcase";
+import { PHOTOS } from "./media";
 import { ContactForm } from "./Shell";
 
 const FAQ = [
@@ -19,10 +20,11 @@ export default function Contact() {
             <p>Tell us about the room, the building, or the idea. We read every message ourselves and reply — usually within a day.</p>
             <span className="crumbs"><b>Marquis Manor</b> / Contact</span>
           </div>
+          <div className="phero-band img-reveal"><img src={PHOTOS[10]} alt="Sunlit interior" /></div>
         </div>
       </section>
 
-      <section className="contact-sec" style={{ paddingTop: 60 }}>
+      <section className="contact-sec" style={{ paddingTop: 70 }}>
         <div className="wrap contact-grid">
           <div className="contact-info">
             <span className="eyebrow">Reach us</span>
@@ -39,9 +41,11 @@ export default function Contact() {
         </div>
       </section>
 
-      <section className="story" style={{ paddingTop: 0 }}>
-        <div className="wrap">
-          <div className="phero-band img-reveal" style={{ marginTop: 0 }}><img src={U("photo-1600573472550-8090b5e0745e", 1900)} alt="Sunlit pavilion" /></div>
+      {/* twin image split — fills the space with real work */}
+      <section className="contact-gallery">
+        <div className="wrap cg-grid">
+          <div className="cg-item img-reveal" data-par="-22"><img src={PHOTOS[3]} alt="Marquis Manor render" loading="lazy" /></div>
+          <div className="cg-item img-reveal" data-par="26"><img src={PHOTOS[12]} alt="Marquis Manor render" loading="lazy" /></div>
         </div>
       </section>
 
@@ -62,6 +66,8 @@ export default function Contact() {
           </div>
         </div>
       </section>
+
+      <PhotoMarquee offset={16} reverse />
     </>
   );
 }
