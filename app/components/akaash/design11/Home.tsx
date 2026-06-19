@@ -1,6 +1,21 @@
 import { U, BASE, PROCESS } from "./data";
 import { SelectedWorks, BlueprintReveal, ServicesBlock } from "./Sections";
 import { ContactForm } from "./Shell";
+import InfiniteGallery from "../../ui/3d-gallery-photography";
+
+/** Bright, architectural frames for the hero's live 3D gallery. */
+const HERO_GALLERY = [
+  "photo-1600585154340-be6161a56a0c",
+  "photo-1600607687939-ce8a6c25118c",
+  "photo-1618221195710-dd6b41faaea6",
+  "photo-1600566753190-17f0baa2a6c3",
+  "photo-1600210492493-0946911123ea",
+  "photo-1616486338812-3dadae4b4ace",
+  "photo-1615874959474-d609969a20ed",
+  "photo-1600573472550-8090b5e0745e",
+  "photo-1505691938895-1758d7feb511",
+  "photo-1600566753086-00f18fb6b3ea",
+].map((id) => ({ src: U(id, 900), alt: "Marquis Manor render" }));
 
 export default function Home() {
   return (
@@ -30,10 +45,15 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="hero-figure">
-            <div className="hero-img"><img className="par" src={U("photo-1618221195710-dd6b41faaea6", 1900)} alt="Sunlit interior render" /></div>
+          <div className="hero-figure hero-3d-wrap">
+            <InfiniteGallery
+              images={HERO_GALLERY}
+              speed={1}
+              visibleCount={10}
+              className="hero-3d"
+            />
             <div className="hero-stat"><b>11</b><span>Years in light</span></div>
-            <div className="hero-tag"><b>Bayfront Penthouse</b> — interior render, golden hour</div>
+            <div className="hero-tag"><b>Live 3D gallery</b> — scroll, drag or let it drift</div>
           </div>
         </div>
 

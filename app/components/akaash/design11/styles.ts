@@ -143,6 +143,10 @@ export const D11_CSS = `
 .d11 .hero-figure .hero-img { position:absolute; inset:0; overflow:hidden; border-radius:6px; }
 .d11 .hero-figure img { transform:scale(1.06); }
 .d11 .hero-figure .par { will-change:transform; }
+/* live 3D gallery feature visual */
+.d11 .hero-3d-wrap { overflow:hidden; background:radial-gradient(120% 100% at 50% 0%, var(--bone-2) 0%, var(--bone) 70%); border:1px solid var(--line-2); }
+.d11 .hero-3d { position:absolute !important; inset:0; width:100%; height:100%; border-radius:6px; }
+.d11 .hero-3d canvas { display:block; width:100% !important; height:100% !important; touch-action:pan-y; }
 .d11 .hero-tag { position:absolute; left:26px; bottom:24px; z-index:2; background:rgba(251,249,244,0.9); backdrop-filter:blur(6px); padding:14px 20px; border-radius:4px; font-size:12px; letter-spacing:.04em; color:var(--ink-2); }
 .d11 .hero-tag b { color:var(--ink); }
 .d11 .hero-stat { position:absolute; right:26px; top:26px; z-index:2; text-align:right; background:rgba(28,24,19,0.86); color:var(--bone); padding:16px 22px; border-radius:4px; }
