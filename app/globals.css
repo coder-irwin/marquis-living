@@ -250,15 +250,19 @@ html.lenis body {
    never bleeds into the shared light theme used by the other designs.
    ===================================================================== */
 .d2 {
-  --ink: #0a0612;          /* deep night */
-  --ink-2: #140a24;        /* indigo-violet */
+  /* Light retheme — variable NAMES kept; values flipped so --ink is now the
+     light page surface and --paper is the dark text. A warm "day sky". */
+  --ink: #faf6ef;          /* warm paper (page surface) */
+  --ink-2: #f1e8d9;        /* faint warm panel */
   --saffron: #ff8a2b;      /* kesar */
-  --marigold: #ffc24b;     /* genda gold */
+  --marigold: #ffc24b;     /* genda gold (decorative) */
   --magenta: #ff3d8b;      /* gulal pink */
   --peacock: #1fb6a6;      /* mor / teal */
   --indigo: #6a5cff;       /* twilight */
-  --paper: #f5ecd8;        /* warm parchment */
-  --paper-dim: rgba(245, 236, 216, 0.62);
+  --paper: #1d1812;        /* dark ink (text) */
+  --paper-dim: rgba(29, 24, 18, 0.62);
+  --line: rgba(29, 24, 18, 0.14);
+  --accent-ink: #b07b1d;   /* deep gold for text/eyebrows on light */
 
   position: relative;
   background: var(--ink);
@@ -268,7 +272,7 @@ html.lenis body {
 }
 .d2 ::selection {
   background: var(--marigold);
-  color: var(--ink);
+  color: var(--paper);
 }
 .d2 .serif {
   font-family: var(--font-fraunces), Georgia, serif;
@@ -283,12 +287,12 @@ html.lenis body {
   font-size: 0.72rem;
   letter-spacing: 0.34em;
   text-transform: uppercase;
-  color: var(--marigold);
+  color: var(--accent-ink);
 }
 
-/* Warm gradient text — kesar → gulal → twilight */
+/* Warm gradient text — readable on light: kesar → gulal → twilight */
 .d2 .gold-text {
-  background: linear-gradient(100deg, var(--marigold), var(--saffron) 38%, var(--magenta) 72%, var(--indigo));
+  background: linear-gradient(100deg, #c9871f, #e0533a 42%, #c0327a 74%, #5b3fce);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -303,9 +307,10 @@ html.lenis body {
 .d2-aurora {
   position: absolute;
   border-radius: 50%;
-  filter: blur(90px);
-  opacity: 0.55;
-  mix-blend-mode: screen;
+  filter: blur(100px);
+  opacity: 0.32;
+  /* multiply tints the warm paper on a light background (screen would wash out) */
+  mix-blend-mode: multiply;
   animation: d2-aurora 18s ease-in-out infinite;
   will-change: transform;
 }
@@ -357,7 +362,7 @@ html.lenis body {
   padding: 15px 28px;
   border-radius: 999px;
   font-size: 0.9rem;
-  color: var(--ink);
+  color: var(--paper);
   background: linear-gradient(100deg, var(--marigold), var(--saffron));
   box-shadow: 0 0 0 0 rgba(255, 162, 75, 0.5);
   transition: box-shadow 0.5s ease, transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
@@ -375,7 +380,7 @@ html.lenis body {
   border-radius: 999px;
   font-size: 0.9rem;
   color: var(--paper);
-  border: 1px solid rgba(245, 236, 216, 0.28);
+  border: 1px solid var(--line);
   transition: border-color 0.4s ease, color 0.4s ease, background 0.4s ease;
 }
 .d2-btn-ghost:hover {
@@ -515,14 +520,16 @@ html.lenis body {
    like a slow camera. Namespaced under .d4.
    ===================================================================== */
 .d4 {
-  --void: #060607;
-  --char: #0c0c0e;
-  --stone: #15151a;
-  --bone: #ece7dd;
-  --mist: rgba(236, 231, 221, 0.58);
-  --gold: #c9a96a;
-  --gold-bright: #e7cf9b;
-  --line: rgba(236, 231, 221, 0.14);
+  /* Light retheme — names kept; --void is now the light surface, --bone the
+     dark text. A bright daylit atrium rather than a dark one. */
+  --void: #f6f3ee;         /* light page surface */
+  --char: #efeae1;
+  --stone: #e6e0d5;
+  --bone: #1b1813;         /* dark text */
+  --mist: rgba(27, 24, 19, 0.6);
+  --gold: #9a7b3f;         /* deeper gold, readable on light */
+  --gold-bright: #c2964c;
+  --line: rgba(27, 24, 19, 0.14);
 
   position: relative;
   background: var(--void);
@@ -531,7 +538,7 @@ html.lenis body {
   overflow-x: hidden;
 }
 .d4 ::selection {
-  background: var(--gold);
+  background: var(--bone);
   color: var(--void);
 }
 .d4 .serif {
@@ -550,17 +557,17 @@ html.lenis body {
   color: var(--gold);
 }
 .d4 .gold-text {
-  background: linear-gradient(100deg, var(--gold-bright), var(--gold) 55%, #9c7f48);
+  background: linear-gradient(100deg, #b78a3c, #9a7b3f 55%, #7a5f2e);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
-/* fallback light field if WebGL is unavailable */
+/* fallback light field if WebGL is unavailable — a warm daylit wash */
 .d4-lightfallback {
   background:
-    radial-gradient(120% 80% at 50% -10%, rgba(201, 169, 106, 0.22), transparent 60%),
-    radial-gradient(80% 60% at 70% 110%, rgba(80, 70, 110, 0.18), transparent 70%),
+    radial-gradient(120% 80% at 50% -10%, rgba(201, 169, 106, 0.28), transparent 62%),
+    radial-gradient(80% 60% at 70% 110%, rgba(120, 110, 90, 0.1), transparent 70%),
     var(--void);
 }
 
@@ -596,7 +603,7 @@ html.lenis body {
   border-radius: 999px;
   font-size: 0.86rem;
   letter-spacing: 0.02em;
-  color: var(--void);
+  color: #fbf8f2;
   background: linear-gradient(100deg, var(--gold-bright), var(--gold));
   transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.5s ease;
 }

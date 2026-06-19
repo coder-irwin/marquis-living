@@ -38,7 +38,7 @@ function Plane({
         <img src={img} alt={`${label} — Marquis Manor`} className="h-full w-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-[rgba(6,6,7,0.6)] via-transparent to-[rgba(6,6,7,0.3)]" />
         <motion.span
-          className="absolute bottom-6 left-6 serif text-2xl text-[var(--bone)]"
+          className="absolute bottom-6 left-6 serif text-2xl text-white"
           style={{ opacity: labelOpacity }}
         >
           {label}

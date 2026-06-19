@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="relative border-t border-[rgba(245,236,216,0.12)]">
+    <footer className="relative border-t border-[var(--line)]">
       <div className="container py-16">
         <div className="flex flex-col gap-12 md:flex-row md:items-end md:justify-between">
           <h2 className="display text-[clamp(3rem,12vw,9rem)] leading-none">
@@ -22,7 +22,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-14 flex flex-col gap-2 border-t border-[rgba(245,236,216,0.12)] pt-6 text-xs text-[var(--paper-dim)] md:flex-row md:justify-between">
+        <div className="mt-14 flex flex-col gap-2 border-t border-[var(--line)] pt-6 text-xs text-[var(--paper-dim)] md:flex-row md:justify-between">
           <span>© {new Date().getFullYear()} Marquis Manor — where your home becomes a story.</span>
           <span>Design 2 — /akaash/design2</span>
         </div>

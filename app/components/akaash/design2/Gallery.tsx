@@ -23,7 +23,7 @@ export default function Gallery() {
           {GALLERY.map((src, i) => (
             <motion.figure
               key={src}
-              className="zoom mb-5 break-inside-avoid overflow-hidden rounded-md ring-1 ring-[rgba(245,236,216,0.1)]"
+              className="zoom mb-5 break-inside-avoid overflow-hidden rounded-md ring-1 ring-[var(--line)]"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-10%" }}

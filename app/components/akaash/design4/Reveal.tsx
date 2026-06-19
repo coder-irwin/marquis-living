@@ -72,8 +72,8 @@ export default function Reveal() {
               style={{ transform: "translateZ(60px)" }}
             >
               <div>
-                <p className="eyebrow !text-[var(--bone)]">Project No. 47</p>
-                <p className="display text-3xl text-[var(--bone)]">The Atrium House</p>
+                <p className="eyebrow !text-white/85">Project No. 47</p>
+                <p className="display text-3xl text-white">The Atrium House</p>
               </div>
               <span className="serif text-xl text-[var(--gold-bright)]">Marquis Manor</span>
             </div>

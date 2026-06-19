@@ -59,7 +59,7 @@ export default function Hero() {
 
       {/* slow rangoli halo */}
       <motion.div
-        className="pointer-events-none absolute left-1/2 top-[42%] -z-0 hidden -translate-x-1/2 -translate-y-1/2 text-[var(--marigold)] opacity-[0.16] md:block"
+        className="pointer-events-none absolute left-1/2 top-[42%] -z-0 hidden -translate-x-1/2 -translate-y-1/2 text-[var(--accent-ink)] opacity-[0.14] md:block"
         style={{ opacity: fade }}
       >
         <Mandala className="d2-spin h-[80vmin] w-[80vmin]" petals={28} rings={4} />
@@ -132,16 +132,16 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.3, delay: 1.4, ease: [0.22, 1, 0.36, 1] }}
         >
-          <div className="relative aspect-[16/8] w-full overflow-hidden rounded-md ring-1 ring-[rgba(245,236,216,0.2)] shadow-[0_40px_120px_-30px_rgba(0,0,0,0.8)]">
+          <div className="relative aspect-[16/8] w-full overflow-hidden rounded-md ring-1 ring-[var(--line)] shadow-[0_40px_110px_-40px_rgba(29,24,18,0.35)]">
             <motion.img
               src={HERO_IMG}
               alt="A furnished open-plan living room designed by Marquis Manor"
               className="h-full w-full object-cover"
               style={{ y: frameY, scale: frameScale }}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink)] via-transparent to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink)] via-[var(--ink)]/35 to-transparent" />
             <div className="absolute bottom-5 left-5 right-5 flex items-end justify-between">
-              <span className="eyebrow !text-[var(--paper)]">Chapter 00 — The Home You Imagine</span>
+              <span className="eyebrow">Chapter 00 — The Home You Imagine</span>
               <span className="serif text-xl text-[var(--paper)]">Marquis Manor</span>
             </div>
           </div>

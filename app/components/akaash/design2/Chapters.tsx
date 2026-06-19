@@ -21,14 +21,14 @@ function Chapter({ c, i }: { c: (typeof CHAPTERS)[number]; i: number }) {
         flip ? "md:[&>*:first-child]:order-2" : ""
       }`}
     >
-      <div className="zoom relative aspect-[4/5] overflow-hidden rounded-md ring-1 ring-[rgba(245,236,216,0.12)]">
+      <div className="zoom relative aspect-[4/5] overflow-hidden rounded-md ring-1 ring-[var(--line)]">
         <motion.img
           src={c.img}
           alt={`${c.title} — ${c.tag} interior by Marquis Manor`}
           className="h-full w-full object-cover"
           style={{ scale: imgScale, y: imgY }}
         />
-        <span className="absolute left-4 top-4 rounded-full bg-[rgba(10,6,18,0.55)] px-3 py-1 text-xs tracking-[0.2em] text-[var(--paper)] backdrop-blur">
+        <span className="absolute left-4 top-4 rounded-full bg-[rgba(250,246,239,0.82)] px-3 py-1 text-xs tracking-[0.2em] text-[var(--paper)] backdrop-blur">
           {c.tag}
         </span>
       </div>

@@ -52,17 +52,20 @@ void main(){
           + noise(vec2(ang * 15.0 - u_time * 0.025, 3.0)) * 0.45;
   float rays = pow(r, 2.2) * smoothstep(1.25, 0.08, dist);
 
-  vec3 gold = vec3(0.80, 0.67, 0.43);
-  vec3 col = vec3(0.024, 0.024, 0.028);
-  col += gold * glow * 0.55;
-  col += gold * rays * 0.34;
-  // faint cool bounce rising from the floor
-  col += vec3(0.10, 0.09, 0.15) * smoothstep(0.0, 0.65, uv.y) * 0.16;
-  // film grain
-  col += hash(uv * u_res + u_time) * 0.04 - 0.02;
-  // vignette
-  float vig = smoothstep(1.25, 0.35, length((uv - 0.5) * vec2(aspect, 1.0)));
-  col *= mix(0.66, 1.0, vig);
+  // Light daylit atmosphere: warm paper base, a gentle sun-pool near the
+  // light source and soft warm ray-shadows — rather than a dark void.
+  vec3 paper = vec3(0.965, 0.945, 0.905);
+  vec3 warm = vec3(0.74, 0.58, 0.34);
+  vec3 col = paper;
+  col = mix(col, warm, glow * 0.13);                 // warm sun-pool
+  col = mix(col, warm * 0.78, rays * 0.10);          // faint ray shadows
+  // warm bloom rising from the floor
+  col = mix(col, warm, smoothstep(0.0, 0.7, uv.y) * 0.04);
+  // gentle vignette darkening the corners a touch
+  float vig = smoothstep(1.3, 0.4, length((uv - 0.5) * vec2(aspect, 1.0)));
+  col = mix(col * vec3(0.9, 0.88, 0.83), col, vig);
+  // very fine grain
+  col += hash(uv * u_res + u_time) * 0.016 - 0.008;
 
   gl_FragColor = vec4(col, 1.0);
 }`;

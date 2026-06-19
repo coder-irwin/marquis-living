@@ -3,7 +3,7 @@ import { MARQUEE_WORDS } from "./data";
 export default function Marquee() {
   const row = [...MARQUEE_WORDS, ...MARQUEE_WORDS];
   return (
-    <section className="relative overflow-hidden border-y border-[rgba(245,236,216,0.12)] py-8">
+    <section className="relative overflow-hidden border-y border-[var(--line)] py-8">
       <div className="marquee-track">
         {[...row, ...row].map((t, i) => (
           <span

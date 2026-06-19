@@ -30,7 +30,7 @@ export default function Journey() {
 
         <div ref={ref} className="relative pl-10 md:pl-0">
           {/* spine */}
-          <div className="absolute left-[14px] top-0 h-full w-px bg-[rgba(245,236,216,0.14)] md:left-1/2" />
+          <div className="absolute left-[14px] top-0 h-full w-px bg-[var(--line)] md:left-1/2" />
           <motion.div
             className="absolute left-[14px] top-0 w-px origin-top bg-gradient-to-b from-[var(--marigold)] via-[var(--saffron)] to-[var(--magenta)] md:left-1/2"
             style={{ scaleY: lineScale, height: "100%" }}

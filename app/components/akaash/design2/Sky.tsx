@@ -35,7 +35,8 @@ export default function Sky() {
     let shoots: Shoot[] = [];
 
     const mouse = { x: -9999, y: -9999 };
-    const EMBER_HUES = ["255,194,75", "255,138,43", "255,61,139"];
+    // deeper, warmer hues so embers/motes read against the light paper
+    const EMBER_HUES = ["201,135,31", "224,83,58", "192,50,122"];
 
     const resize = () => {
       dpr = Math.min(window.devicePixelRatio || 1, 2);
@@ -98,8 +99,8 @@ export default function Sky() {
         ctx.beginPath();
         ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
         ctx.fillStyle = s.hue
-          ? `rgba(255, 206, 120, ${a})`
-          : `rgba(233, 233, 255, ${a})`;
+          ? `rgba(176, 123, 29, ${a})`
+          : `rgba(60, 48, 34, ${a * 0.55})`;
         ctx.fill();
 
         // wire nearby stars to the cursor's neighbourhood
@@ -111,7 +112,7 @@ export default function Sky() {
           ctx.beginPath();
           ctx.moveTo(s.x, s.y);
           ctx.lineTo(mouse.x, mouse.y);
-          ctx.strokeStyle = `rgba(255, 194, 75, ${al})`;
+          ctx.strokeStyle = `rgba(120, 86, 30, ${al})`;
           ctx.lineWidth = 0.6;
           ctx.stroke();
         }

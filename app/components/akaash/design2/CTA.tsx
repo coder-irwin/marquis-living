@@ -7,13 +7,13 @@ export default function CTA() {
   return (
     <section id="contact" className="relative px-4 py-16 md:py-24">
       <div className="container">
-        <div className="relative overflow-hidden rounded-2xl ring-1 ring-[rgba(245,236,216,0.14)]">
+        <div className="relative overflow-hidden rounded-2xl ring-1 ring-[var(--line)]">
           <img
             src={CTA_IMG}
             alt="A warm, finished living space by Marquis Manor"
             className="absolute inset-0 h-full w-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-tr from-[var(--ink)] via-[rgba(10,6,18,0.78)] to-[rgba(20,10,36,0.55)]" />
+          <div className="absolute inset-0 bg-gradient-to-tr from-[rgba(250,246,239,0.95)] via-[rgba(250,246,239,0.8)] to-[rgba(250,246,239,0.45)]" />
 
           <div className="relative flex flex-col items-start gap-8 px-7 py-20 md:px-16 md:py-28">
             <motion.h2
