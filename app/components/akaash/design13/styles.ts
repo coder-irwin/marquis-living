@@ -6,6 +6,11 @@
  */
 export const D12_CSS = `
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,opsz,wght@0,10..72,300;0,10..72,400;0,10..72,500;1,10..72,300;1,10..72,400&family=Fragment+Mono:ital@0;1&family=Inter:wght@300;400;500&display=swap');
+@font-face {
+  font-family:'Modern Romance';
+  src:url('/fonts/modern-romance.otf') format('opentype');
+  font-weight:normal; font-style:normal; font-display:swap;
+}
 
 .d13 {
   --bone:#f5f2ec; --bone-2:#ebe6dc; --paper:#fbfaf6;
@@ -13,7 +18,7 @@ export const D12_CSS = `
   --sand:#bea890; --sand-2:#a78d72; --sand-soft:rgba(190,168,144,0.14);
   --muted:rgba(24,18,17,0.56); --faint:rgba(24,18,17,0.40);
   --line:rgba(24,18,17,0.14); --line-2:rgba(24,18,17,0.07);
-  --serif:'Noto Serif Display',Georgia,serif; --mono:'Fragment Mono',ui-monospace,monospace; --sans:'Inter',system-ui,sans-serif;
+  --serif:'Modern Romance','Noto Serif Display',Georgia,serif; --mono:'Fragment Mono',ui-monospace,monospace; --sans:'Inter',system-ui,sans-serif;
   background:var(--bone); color:var(--ink); font-family:var(--sans);
   overflow-x:hidden; min-height:100vh; position:relative; -webkit-font-smoothing:antialiased;
 }
@@ -122,7 +127,7 @@ export const D12_CSS = `
 
 /* ---------- intro / proof ---------- */
 .d13 .intro { padding:130px 0; }
-.d13 .intro-grid { display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:end; }
+.d13 .intro-grid { display:grid; grid-template-columns:1.15fr 0.85fr; gap:70px; align-items:start; }
 .d13 .intro h2 { font-family:var(--serif); font-weight:300; font-size:clamp(28px,3.4vw,50px); line-height:1.18; }
 .d13 .intro h2 em { font-style:italic; color:var(--sand-2); }
 .d13 .intro h2 .mut { color:var(--faint); }
