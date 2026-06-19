@@ -29,7 +29,7 @@ export default function Nav() {
     >
       <nav className="container flex h-[72px] items-center justify-between">
         <a href="#top" className="serif text-2xl tracking-tight text-[var(--paper)]">
-          Aakash<span className="text-[var(--marigold)]">.</span>
+          Marquis<span className="text-[var(--marigold)]">·</span>Manor
         </a>
 
         <ul className="hidden items-center gap-9 md:flex">

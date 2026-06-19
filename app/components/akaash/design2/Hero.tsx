@@ -76,7 +76,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.25 }}
         >
-          Aakash · Interior Studio — Est. under an open sky
+          Marquis Manor · Interiors — Est. under an open sky
         </motion.p>
 
         <motion.h1
@@ -135,14 +135,14 @@ export default function Hero() {
           <div className="relative aspect-[16/8] w-full overflow-hidden rounded-md ring-1 ring-[rgba(245,236,216,0.2)] shadow-[0_40px_120px_-30px_rgba(0,0,0,0.8)]">
             <motion.img
               src={HERO_IMG}
-              alt="A furnished open-plan living room designed by Aakash"
+              alt="A furnished open-plan living room designed by Marquis Manor"
               className="h-full w-full object-cover"
               style={{ y: frameY, scale: frameScale }}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink)] via-transparent to-transparent" />
             <div className="absolute bottom-5 left-5 right-5 flex items-end justify-between">
               <span className="eyebrow !text-[var(--paper)]">Chapter 00 — The Home You Imagine</span>
-              <span className="serif text-xl text-[var(--paper)]">Aakash</span>
+              <span className="serif text-xl text-[var(--paper)]">Marquis Manor</span>
             </div>
           </div>
         </motion.div>

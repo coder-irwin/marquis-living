@@ -24,7 +24,7 @@ function Chapter({ c, i }: { c: (typeof CHAPTERS)[number]; i: number }) {
       <div className="zoom relative aspect-[4/5] overflow-hidden rounded-md ring-1 ring-[rgba(245,236,216,0.12)]">
         <motion.img
           src={c.img}
-          alt={`${c.title} — ${c.tag} interior by Aakash`}
+          alt={`${c.title} — ${c.tag} interior by Marquis Manor`}
           className="h-full w-full object-cover"
           style={{ scale: imgScale, y: imgY }}
         />

@@ -10,7 +10,7 @@ export default function CTA() {
         <div className="relative overflow-hidden rounded-2xl ring-1 ring-[rgba(245,236,216,0.14)]">
           <img
             src={CTA_IMG}
-            alt="A warm, finished living space by Aakash"
+            alt="A warm, finished living space by Marquis Manor"
             className="absolute inset-0 h-full w-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-tr from-[var(--ink)] via-[rgba(10,6,18,0.78)] to-[rgba(20,10,36,0.55)]" />
@@ -43,7 +43,7 @@ export default function CTA() {
               viewport={{ once: true }}
               transition={{ duration: 1, delay: 0.3 }}
             >
-              <a href="mailto:hello@aakash.studio" className="d2-btn">
+              <a href="mailto:hello@marquismanor.com" className="d2-btn">
                 Book a consultation
               </a>
               <a href="#gallery" className="d2-btn-ghost">

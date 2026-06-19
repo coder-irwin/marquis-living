@@ -31,7 +31,7 @@ export default function Gallery() {
             >
               <img
                 src={src}
-                alt={`Interior project ${i + 1} by Aakash`}
+                alt={`Interior project ${i + 1} by Marquis Manor`}
                 loading="lazy"
                 className="w-full"
               />

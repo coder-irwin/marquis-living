@@ -1,4 +1,4 @@
-// Akaash · Design 2 — content + imagery for "Aakash" interior studio.
+// Akaash · Design 2 — content + imagery for the Marquis Manor interior studio.
 // All paths are self-hosted glocalstudio interior/portfolio shots so nothing
 // depends on an external CDN. The IMG map from the shared module gives a couple
 // of extra verified interior scenes for the hero / CTA.

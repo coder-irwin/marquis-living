@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 
 /**
- * The living night sky behind the hero — "Aakash".
+ * The living night sky behind the hero.
  *
  * A single <canvas> renders four layered behaviours that together read as a
  * folk-tale night: drifting twinkling stars, a slow constellation that wires
