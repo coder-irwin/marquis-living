@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import InkReveal from "../../ui/ink-reveal";
-import { HERO_IMG } from "./data";
+import { HERO_IMG, HERO_VIDEO } from "./data";
 
 /**
  * Hero for design3 — the InkReveal canvas sits over a full-bleed interior.
@@ -25,9 +25,15 @@ export default function Hero() {
   return (
     <section id="top" className="relative h-[100svh] min-h-[640px] overflow-hidden bg-[var(--paper)]">
       {/* the room, hidden beneath the ink until revealed */}
-      <img
-        src={HERO_IMG}
-        alt="A furnished open-plan living room by Marquis Manor"
+      <video
+        src={HERO_VIDEO}
+        poster={HERO_IMG}
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
+        aria-label="Marquis Manor studio showreel"
         className="absolute inset-0 h-full w-full object-cover"
       />
       {/* readability scrim only along the bottom, where the headline sits */}

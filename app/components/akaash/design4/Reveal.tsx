@@ -8,7 +8,7 @@ import {
   useTransform,
   useScroll,
 } from "framer-motion";
-import { REVEAL_IMG } from "./data";
+import { REVEAL_IMG, REVEAL_VIDEO } from "./data";
 
 /**
  * The Reveal — the resolved room presented on a plane that tilts in 3D toward
@@ -58,10 +58,15 @@ export default function Reveal() {
             className="preserve-3d relative aspect-[16/9] overflow-hidden rounded-md ring-1 ring-[var(--line)] shadow-[0_70px_180px_-50px_rgba(0,0,0,0.9)]"
             style={{ rotateX: sx, rotateY: sy, transformStyle: "preserve-3d" }}
           >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={REVEAL_IMG}
-              alt="The finished room — Marquis Manor"
+            <video
+              src={REVEAL_VIDEO}
+              poster={REVEAL_IMG}
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
+              aria-label="Marquis Manor studio showreel"
               className="h-full w-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[rgba(6,6,7,0.55)] via-transparent to-transparent" />

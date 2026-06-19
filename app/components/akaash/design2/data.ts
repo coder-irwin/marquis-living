@@ -5,6 +5,7 @@
 import { IMG } from "../../images";
 
 export const HERO_IMG = IMG.hero; // furnished open-plan living (glocalstudio)
+export const HERO_VIDEO = "/design5bgvideo.mp4"; // studio showreel, plays in the hero frame
 export const CTA_IMG = IMG.cta;
 
 const P = "/glocal-portfolio";

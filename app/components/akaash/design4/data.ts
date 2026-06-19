@@ -6,6 +6,7 @@ const P = "/glocal-portfolio";
 export const THRESHOLD_IMG = IMG.hero;
 export const SPOTLIGHT_IMG = `${P}/portfolio-23-11724ad1.webp`;
 export const REVEAL_IMG = IMG.cta;
+export const REVEAL_VIDEO = "/design5bgvideo.mp4"; // showreel plays inside the final reveal plane
 
 // Layered planes for the scroll "descent" (back → front).
 export const DESCENT = [

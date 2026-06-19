@@ -5,6 +5,7 @@ import { IMG } from "../../images";
 const P = "/glocal-portfolio";
 
 export const HERO_IMG = IMG.hero; // furnished open-plan living — revealed under the ink
+export const HERO_VIDEO = "/design5bgvideo.mp4"; // studio showreel revealed beneath the ink
 
 // The user journey, told as "The Marquis Method".
 export const JOURNEY = [

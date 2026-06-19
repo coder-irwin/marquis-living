@@ -3,7 +3,8 @@ import { IMG } from "../../images";
 
 const P = "/glocal-portfolio";
 
-export const APERTURE_IMG = IMG.hero; // the room you step into
+export const APERTURE_IMG = IMG.hero; // the room you step into (also the video poster)
+export const APERTURE_VIDEO = "/design5bgvideo.mp4"; // showreel revealed as the aperture opens
 
 // Centered fanning photo deck.
 export const FAN = [

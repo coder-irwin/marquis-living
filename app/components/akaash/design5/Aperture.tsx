@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import { motion, useScroll, useTransform, useMotionTemplate } from "framer-motion";
-import { APERTURE_IMG } from "./data";
+import { APERTURE_IMG, APERTURE_VIDEO } from "./data";
 
 /**
  * The signature interaction: a small centered circle of an interior that, as
@@ -33,9 +33,15 @@ export default function Aperture() {
       <div className="sticky top-0 flex h-[100svh] items-center justify-center overflow-hidden">
         {/* expanding aperture */}
         <motion.div className="absolute inset-0" style={{ clipPath: clip, WebkitClipPath: clip }}>
-          <motion.img
-            src={APERTURE_IMG}
-            alt="The room beyond the aperture — Marquis Manor"
+          <motion.video
+            src={APERTURE_VIDEO}
+            poster={APERTURE_IMG}
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            aria-label="Marquis Manor studio showreel"
             className="h-full w-full object-cover"
             style={{ scale: imgScale }}
           />

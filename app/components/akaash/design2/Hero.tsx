@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Sky from "./Sky";
 import Mandala from "./Mandala";
-import { HERO_IMG } from "./data";
+import { HERO_IMG, HERO_VIDEO } from "./data";
 
 const WORDS = ["Where", "your", "home", "becomes", "a", "story."];
 
@@ -133,9 +133,15 @@ export default function Hero() {
           transition={{ duration: 1.3, delay: 1.4, ease: [0.22, 1, 0.36, 1] }}
         >
           <div className="relative aspect-[16/8] w-full overflow-hidden rounded-md ring-1 ring-[var(--line)] shadow-[0_40px_110px_-40px_rgba(29,24,18,0.35)]">
-            <motion.img
-              src={HERO_IMG}
-              alt="A furnished open-plan living room designed by Marquis Manor"
+            <motion.video
+              src={HERO_VIDEO}
+              poster={HERO_IMG}
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
+              aria-label="Marquis Manor studio showreel"
               className="h-full w-full object-cover"
               style={{ y: frameY, scale: frameScale }}
             />
