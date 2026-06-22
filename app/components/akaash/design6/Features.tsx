@@ -14,7 +14,7 @@ function Check() {
 }
 
 /**
- * Why Marquis Manor — four feature points that scale + fade in subtly on
+ * Why Marquis Living — four feature points that scale + fade in subtly on
  * scroll approach, each marked with a teal check.
  */
 export default function Features() {
@@ -22,7 +22,7 @@ export default function Features() {
     <section id="why" className="px-6 py-24 md:py-32">
       <div className="container">
         <div className="mx-auto mb-16 max-w-2xl text-center">
-          <p className="eyebrow mb-4">Why Marquis Manor</p>
+          <p className="eyebrow mb-4">Why Marquis Living</p>
           <h2 className="display text-[clamp(2rem,5vw,3.6rem)]">
             Built like a workshop, run like a studio.
           </h2>

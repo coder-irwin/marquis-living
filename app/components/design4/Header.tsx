@@ -72,7 +72,7 @@ export default function Header() {
           </nav>
 
           {/* Centered logo */}
-          <a href="#top" aria-label="Marquis Manor — home" className="shrink-0">
+          <a href="#top" aria-label="Marquis Living — home" className="shrink-0">
             <Wordmark className="text-lg md:text-xl" />
           </a>
 
@@ -128,7 +128,7 @@ export default function Header() {
             </nav>
 
             <div className="flex items-center justify-between text-[0.7rem] uppercase tracking-[0.18em] text-[#2f3a48]/60">
-              <span>©Marquis Manor</span>
+              <span>©Marquis Living</span>
               <span>London</span>
             </div>
           </motion.div>

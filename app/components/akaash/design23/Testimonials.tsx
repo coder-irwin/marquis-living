@@ -8,7 +8,7 @@ import { motion, AnimatePresence } from "framer-motion";
 // autoplay + arrows. framer-motion only; arrows are inline SVG (no react-icons).
 
 const TESTIMONIALS = [
-  { quote: "We'd lived here two years and it never felt like ours. Marquis Manor gave us a home we now can't bear to leave.", name: "Elena Rossi", designation: "Homeowner · Palm Jumeirah", src: "/design23/people/p1.jpg" },
+  { quote: "We'd lived here two years and it never felt like ours. Marquis Living gave us a home we now can't bear to leave.", name: "Elena Rossi", designation: "Homeowner · Palm Jumeirah", src: "/design23/people/p1.jpg" },
   { quote: "The first concept arrived in 48 hours and it was already right. They carried the entire build — we simply watched our home appear.", name: "David Okonkwo", designation: "Homeowner · Emirates Hills", src: "/design23/people/p2.jpg" },
   { quote: "Every material, every fall of light — considered. The first time I walked in, I cried. No room had ever done that to me.", name: "Priya Nair", designation: "Homeowner · Downtown Dubai", src: "/design23/people/p3.jpg" },
   { quote: "I've handed projects to a dozen studios. None deliver this level of taste — with this little drama getting there.", name: "Marcus Hale", designation: "Property Developer · DIFC", src: "/design23/people/p4.jpg" },

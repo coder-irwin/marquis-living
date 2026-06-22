@@ -23,7 +23,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-14 flex flex-col gap-2 border-t border-[var(--line)] pt-6 text-xs text-[var(--paper-dim)] md:flex-row md:justify-between">
-          <span>© {new Date().getFullYear()} Marquis Manor — where your home becomes a story.</span>
+          <span>© {new Date().getFullYear()} Marquis Living — where your home becomes a story.</span>
           <span>Design 2 — /akaash/design2</span>
         </div>
       </div>

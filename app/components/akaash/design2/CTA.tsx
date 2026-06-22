@@ -10,7 +10,7 @@ export default function CTA() {
         <div className="relative overflow-hidden rounded-2xl ring-1 ring-[var(--line)]">
           <img
             src={CTA_IMG}
-            alt="A warm, finished living space by Marquis Manor"
+            alt="A warm, finished living space by Marquis Living"
             className="absolute inset-0 h-full w-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-tr from-[rgba(250,246,239,0.95)] via-[rgba(250,246,239,0.8)] to-[rgba(250,246,239,0.45)]" />

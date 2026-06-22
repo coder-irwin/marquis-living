@@ -8,7 +8,7 @@ import { HEADLINE, HERO_VIDEO, HERO_POSTER } from "./data";
  * Hero — full-width, oversized bold sans headline revealed word-by-word (the
  * signature motion borrowed in spirit from the studio reference), over a light
  * airy field, followed by the studio showreel playing muted/looped in a large
- * rounded frame that parallaxes on scroll. Copy is entirely Marquis Manor.
+ * rounded frame that parallaxes on scroll. Copy is entirely Marquis Living.
  */
 const container = {
   hidden: {},
@@ -37,7 +37,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.1 }}
         >
-          Marquis Manor — Interior Studio
+          Marquis Living — Interior Studio
         </motion.p>
 
         <motion.h1
@@ -97,7 +97,7 @@ export default function Hero() {
             loop
             playsInline
             preload="metadata"
-            aria-label="Marquis Manor studio showreel"
+            aria-label="Marquis Living studio showreel"
           />
           {/* soft top scrim keeps the frame feeling light and editorial */}
           <div className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-black/15 to-transparent" />

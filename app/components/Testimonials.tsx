@@ -19,7 +19,7 @@ const QUOTES = [
   },
   {
     quote:
-      "Marquis Manor understood exactly the drama we wanted. The Circus chairs turned an ordinary corner into the heart of the house.",
+      "Marquis Living understood exactly the drama we wanted. The Circus chairs turned an ordinary corner into the heart of the house.",
     name: "Priya Sharma",
     role: "Circus Collection",
   },

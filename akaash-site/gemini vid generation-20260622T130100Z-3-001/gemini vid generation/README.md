@@ -1,4 +1,4 @@
-# Marquis Manor — Scroll-Driven Interior Design Site
+# Marquis Living — Scroll-Driven Interior Design Site
 
 A premium, single-page **scroll-driven house walkthrough**. As the visitor scrolls,
 a 240-frame video of a luxury villa is "scrubbed" on a `<canvas>`, room by room.
@@ -116,8 +116,8 @@ ffprobe -v error -select_streams v:0 -show_entries stream=avg_frame_rate -of def
 All the knobs live in two files.
 
 ### Brand, copy & rooms — `index.html`
-- **Site name**: search for `MARQUIS MANOR` (nav, preloader, footer) and
-  `Marquis Manor` (eyebrows, modal, gallery text, email).
+- **Site name**: search for `MARQUIS LIVING` (nav, preloader, footer) and
+  `Marquis Living` (eyebrows, modal, gallery text, email).
 - **Chapter captions**: the `<article class="chapter …">` blocks inside
   `#overlays`. Each has a `data-chapter` key that must match an entry in the
   `CHAPTERS` array in `script.js`.

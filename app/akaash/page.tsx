@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Marquis Manor — Design Index",
-  description: "An index of the Marquis Manor concept designs.",
+  title: "Marquis Living — Design Index",
+  description: "An index of the Marquis Living concept designs.",
 };
 
 const DESIGNS = [
@@ -53,7 +53,7 @@ export default function AkaashIndexPage() {
       <style dangerouslySetInnerHTML={{ __html: `@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap');${CSS}` }} />
       <header>
         <div className="wrap">
-          <div className="ey">Marquis Manor · Concept Designs</div>
+          <div className="ey">Marquis Living · Concept Designs</div>
           <h1>The design <em>index.</em></h1>
           <p className="sub">Every concept direction in one place. Pick a number to walk through it.</p>
         </div>
@@ -75,7 +75,7 @@ export default function AkaashIndexPage() {
       </section>
 
       <footer>
-        <div className="wrap">© 2026 Marquis Manor — concept experiences</div>
+        <div className="wrap">© 2026 Marquis Living — concept experiences</div>
       </footer>
     </div>
   );

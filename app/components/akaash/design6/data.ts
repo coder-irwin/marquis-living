@@ -1,8 +1,8 @@
-// Akaash · Design 6 — "Atelier" content + imagery for Marquis Manor.
+// Akaash · Design 6 — "Atelier" content + imagery for Marquis Living.
 //
 // Per the latest direction, this design uses the client's own portfolio
 // photography (/glocal-portfolio) and the studio showreel video to give it a
-// luxury feel. All copy below is original Marquis Manor wording.
+// luxury feel. All copy below is original Marquis Living wording.
 
 const P = "/glocal-portfolio";
 
@@ -36,7 +36,7 @@ export const PORTFOLIO = [
   { src: `${P}/portfolio-9-f383f968.webp`, t: "Kitchen" },
 ];
 
-// Why Marquis Manor — four feature points with teal checks.
+// Why Marquis Living — four feature points with teal checks.
 export const FEATURES = [
   { t: "An in-house workshop", d: "We make, not just specify — so quality and timeline stay in our hands." },
   { t: "Fixed, honest timelines", d: "A schedule you can plan a life around, agreed before we start." },

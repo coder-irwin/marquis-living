@@ -379,7 +379,7 @@ export default function DesignOne() {
       <div className="preloader" id="preloader">
         <div className="preloader__inner">
           <div className="preloader__mark">✦</div>
-          <div className="preloader__brand">MARQUIS MANOR</div>
+          <div className="preloader__brand">MARQUIS LIVING</div>
           <div className="preloader__bar">
             <span id="preloaderFill"></span>
           </div>
@@ -393,7 +393,7 @@ export default function DesignOne() {
       {/* ============ FIXED NAV ============ */}
       <header className="nav" id="nav">
         <a className="nav__brand" href="#top">
-          <span className="nav__mark">✦</span> MARQUIS MANOR
+          <span className="nav__mark">✦</span> MARQUIS LIVING
         </a>
         <nav className="nav__links">
           <a href="#" data-go="0.28">Living</a>
@@ -417,7 +417,7 @@ export default function DesignOne() {
             {/* Chapter overlays (opacity driven by JS) */}
             <div className="overlays" id="overlays">
               <article className="chapter chapter--hero" data-chapter="exterior">
-                <p className="chapter__eyebrow">Marquis Manor · Est. 2014</p>
+                <p className="chapter__eyebrow">Marquis Living · Est. 2014</p>
                 <h1 className="chapter__title">
                   Walk into<br />a home that<br />
                   <em>feels like you.</em>
@@ -615,7 +615,7 @@ export default function DesignOne() {
             </h2>
             <p className="gallery__intro">
               A closer look at the spaces you just walked through — each one
-              designed, styled and finished by the Marquis Manor atelier.
+              designed, styled and finished by the Marquis Living atelier.
             </p>
           </div>
           <div className="gallery__grid">
@@ -733,7 +733,7 @@ export default function DesignOne() {
             </figure>
             <figure className="quote">
               <div className="quote__thumb"><img src="/design-one/assets/frames/frame_0240.jpg" alt="Coastal villa terrace" loading="lazy" /></div>
-              <blockquote>&quot;We picked three rooms to start. We ended up letting Marquis Manor do the entire home — and the terrace is now where we live.&quot;</blockquote>
+              <blockquote>&quot;We picked three rooms to start. We ended up letting Marquis Living do the entire home — and the terrace is now where we live.&quot;</blockquote>
               <figcaption><span className="quote__stars">★★★★★</span>The Alvarez Family · Coastal Villa</figcaption>
             </figure>
           </div>
@@ -793,7 +793,7 @@ export default function DesignOne() {
 
             <aside className="visit">
               <figure className="visit__img">
-                <img src="/design-one/assets/frames/frame_0045.jpg" alt="Marquis Manor atelier entrance" loading="lazy" />
+                <img src="/design-one/assets/frames/frame_0045.jpg" alt="Marquis Living atelier entrance" loading="lazy" />
                 <figcaption>The atelier · Bel Air</figcaption>
               </figure>
               <div className="visit__body">
@@ -818,8 +818,8 @@ export default function DesignOne() {
         </section>
 
         <footer className="footer">
-          <div className="footer__brand"><span>✦</span> MARQUIS MANOR</div>
-          <p>Marquis Manor · Interior Design · hello@marquismanor.studio</p>
+          <div className="footer__brand"><span>✦</span> MARQUIS LIVING</div>
+          <p>Marquis Living · Interior Design · hello@marquismanor.studio</p>
           <p className="footer__fine">A scroll-through concept experience.</p>
         </footer>
       </main>
@@ -832,7 +832,7 @@ export default function DesignOne() {
           <p className="modal__eyebrow">Bespoke interior</p>
           <h3 className="modal__title" id="modalTitle">Design your Living Room</h3>
           <p className="modal__copy">
-            Leave your details and a Marquis Manor designer will send a tailored
+            Leave your details and a Marquis Living designer will send a tailored
             concept for this room within 48 hours.
           </p>
           <form className="modal__form" id="modalForm">

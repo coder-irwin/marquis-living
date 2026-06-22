@@ -46,7 +46,7 @@ export default function Ethos() {
         })}
       </p>
       <div className="d5-rule mt-12">
-        <span className="serif italic text-lg">Marquis Manor</span>
+        <span className="serif italic text-lg">Marquis Living</span>
       </div>
     </section>
   );

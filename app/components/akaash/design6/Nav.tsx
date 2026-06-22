@@ -27,7 +27,7 @@ export default function Nav() {
     >
       <nav className="container flex h-[68px] items-center justify-between">
         <a href="#top" className="text-lg font-semibold tracking-tight">
-          Marquis Manor<span className="text-[var(--teal)]">.</span>
+          Marquis Living<span className="text-[var(--teal)]">.</span>
         </a>
 
         <ul className="hidden items-center gap-9 md:flex">

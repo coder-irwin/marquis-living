@@ -41,7 +41,7 @@ export function WhyShowcase() {
   return (
     <section className="why-dark">
       <div className="wrap why-dark-head">
-        <span className="eyebrow">Why Marquis Manor</span>
+        <span className="eyebrow">Why Marquis Living</span>
         <h2 className="display">Every detail,<br /><em>every time</em>.</h2>
       </div>
       <div className="wrap why-dark-rows">
@@ -49,7 +49,7 @@ export function WhyShowcase() {
           <div className={`wd-row${i % 2 ? " flip" : ""}`} key={i}>
             <div className="wd-num">{String(i + 1).padStart(2, "0")}</div>
             <div className="wd-img img-reveal" data-par={i % 2 ? "26" : "-26"}>
-              <img src={PHOTOS[(i * 5 + 1) % PHOTOS.length]} alt="Marquis Manor render" loading="lazy" />
+              <img src={PHOTOS[(i * 5 + 1) % PHOTOS.length]} alt="Marquis Living render" loading="lazy" />
             </div>
             <div className="wd-copy reveal">
               <h3>{w.h}</h3>

@@ -3,7 +3,7 @@ import Shell from "../../../components/akaash/design11/Shell";
 import Contact from "../../../components/akaash/design11/Contact";
 
 export const metadata: Metadata = {
-  title: "Contact — Marquis Manor · Aperture",
+  title: "Contact — Marquis Living · Aperture",
   description:
     "Tell us about the room, the building, or the idea. A real person reads every message and replies — usually within a day. Remote-first, delivered worldwide.",
 };

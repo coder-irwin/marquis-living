@@ -306,7 +306,7 @@ export default function Site() {
           {/* right — visit the atelier */}
           <aside className="visit boxrv">
             <figure className="visit-img ir">
-              <img src="/design23/gallery/living.png" alt="Marquis Manor atelier" loading="lazy" />
+              <img src="/design23/gallery/living.png" alt="Marquis Living atelier" loading="lazy" />
               <figcaption>The atelier · Alserkal Avenue, Dubai</figcaption>
             </figure>
             <div className="visit-body">

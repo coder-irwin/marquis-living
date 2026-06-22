@@ -23,7 +23,7 @@ export default function ThreeDFeature() {
           <motion.img style={{ y, scale: 1.12 }} src={IMG.scene1} alt="" className="absolute inset-0 h-full w-full object-cover" />
         </div>
         <div>
-          <p className="eyebrow mb-6">The Marquis Manor 3D difference</p>
+          <p className="eyebrow mb-6">The Marquis Living 3D difference</p>
           <AnimatedText el="h2" text="See it before you commit." className="display text-[clamp(2rem,4vw,3.4rem)]" />
           <div className="mt-9 flex flex-col gap-7">
             {POINTS.map((p, i) => (

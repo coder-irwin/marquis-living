@@ -22,11 +22,11 @@ export default function Studio() {
         <div>
           <AnimatedText
             el="h2"
-            text="Marquis Manor turns art into furniture — and furniture into the soul of a room."
+            text="Marquis Living turns art into furniture — and furniture into the soul of a room."
             className="display text-[clamp(1.9rem,3.6vw,3.4rem)]"
           />
           <Reveal delay={0.1} className="mt-9 max-w-xl text-lg leading-relaxed text-cream/70">
-            Every Marquis Manor collection begins as a story — the ocean, the cosmos, the wild — and is sculpted by hand
+            Every Marquis Living collection begins as a story — the ocean, the cosmos, the wild — and is sculpted by hand
             into functional art. We pair rare materials, considered proportion and meticulous craft to create pieces
             that feel collected, never bought.
           </Reveal>
@@ -39,10 +39,10 @@ export default function Studio() {
 
         <div ref={ref} className="grid grid-cols-2 gap-5">
           <motion.div style={{ y: y1 }} className="zoom aspect-[3/4] overflow-hidden">
-            <img src={IMG.about1} alt="A Marquis Manor dining setting" loading="lazy" />
+            <img src={IMG.about1} alt="A Marquis Living dining setting" loading="lazy" />
           </motion.div>
           <motion.div style={{ y: y2 }} className="zoom mt-12 aspect-[3/4] overflow-hidden">
-            <img src={IMG.about2} alt="A Marquis Manor bedroom setting" loading="lazy" />
+            <img src={IMG.about2} alt="A Marquis Living bedroom setting" loading="lazy" />
           </motion.div>
         </div>
       </div>

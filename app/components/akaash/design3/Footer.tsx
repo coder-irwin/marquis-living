@@ -42,7 +42,7 @@ export default function Footer() {
           <span className="serif text-lg text-[var(--ink)]">
             Marquis<span className="text-[var(--vermilion)]">·</span>Manor
           </span>
-          <span>© {new Date().getFullYear()} Marquis Manor — drawn in ink, built to live in.</span>
+          <span>© {new Date().getFullYear()} Marquis Living — drawn in ink, built to live in.</span>
           <span>Design 3 — /akaash/design3</span>
         </div>
       </div>

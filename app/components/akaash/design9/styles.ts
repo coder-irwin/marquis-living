@@ -1,4 +1,4 @@
-// Akaash · Design 9 — "Cinema" scoped styles for Marquis Manor.
+// Akaash · Design 9 — "Cinema" scoped styles for Marquis Living.
 //
 // Kept self-contained (injected via a <style> tag in the site shell) instead of
 // appended to the shared globals.css, so design9 is fully isolated from every

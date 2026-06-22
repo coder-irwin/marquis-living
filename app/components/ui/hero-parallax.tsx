@@ -90,13 +90,13 @@ export const HeroParallax = ({
 export const Header = () => {
   return (
     <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full left-0 top-0">
-      <p className="eyebrow mb-6">The Marquis Manor Catalogue</p>
+      <p className="eyebrow mb-6">The Marquis Living Catalogue</p>
       <h1 className="display text-[clamp(2.4rem,6vw,5.5rem)] text-cream">
         Functional art, <br /> for every room.
       </h1>
       <p className="max-w-2xl text-base md:text-xl mt-8 text-muted">
         A glimpse across our collections — chairs, tables, consoles and accents, each hand-crafted and
-        unmistakably Marquis Manor. Scroll to drift through the gallery.
+        unmistakably Marquis Living. Scroll to drift through the gallery.
       </p>
     </div>
   );

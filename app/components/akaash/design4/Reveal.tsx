@@ -66,7 +66,7 @@ export default function Reveal() {
               loop
               playsInline
               preload="metadata"
-              aria-label="Marquis Manor studio showreel"
+              aria-label="Marquis Living studio showreel"
               className="h-full w-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[rgba(6,6,7,0.55)] via-transparent to-transparent" />
@@ -80,7 +80,7 @@ export default function Reveal() {
                 <p className="eyebrow !text-white/85">Project No. 47</p>
                 <p className="display text-3xl text-white">The Atrium House</p>
               </div>
-              <span className="serif text-xl text-[var(--gold-bright)]">Marquis Manor</span>
+              <span className="serif text-xl text-[var(--gold-bright)]">Marquis Living</span>
             </div>
           </motion.div>
         </motion.div>

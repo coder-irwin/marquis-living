@@ -6,7 +6,7 @@ import { useState } from "react";
 const QUOTES = [
   { quote: "Our Ocean console is the first thing every guest stops at. It doesn't look like furniture — it looks like art we happen to use every day.", name: "Ananya Mehta", role: "Ocean Collection" },
   { quote: "The detailing is extraordinary. You can feel the hours of hand-work in every curve of the Astronomica pieces.", name: "Rohan Kapoor", role: "Astronomica Collection" },
-  { quote: "Marquis Manor understood exactly the drama we wanted. The Circus chairs turned an ordinary corner into the heart of the house.", name: "Priya Sharma", role: "Circus Collection" },
+  { quote: "Marquis Living understood exactly the drama we wanted. The Circus chairs turned an ordinary corner into the heart of the house.", name: "Priya Sharma", role: "Circus Collection" },
 ];
 
 const EASE = [0.22, 1, 0.36, 1] as const;

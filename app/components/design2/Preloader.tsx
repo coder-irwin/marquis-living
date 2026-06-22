@@ -73,7 +73,7 @@ export default function Preloader() {
         animate={{ opacity: reveal ? 0 : 1, y: reveal ? -30 : 0 }}
         transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
       >
-        <p className="eyebrow mb-7">Marquis Manor</p>
+        <p className="eyebrow mb-7">Marquis Living</p>
         <div className="overflow-hidden">
           <motion.h1
             initial={{ y: "115%" }}

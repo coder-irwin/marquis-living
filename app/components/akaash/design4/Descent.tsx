@@ -35,7 +35,7 @@ function Plane({
     >
       <div className="relative h-[62vh] w-[86vw] max-w-5xl overflow-hidden rounded-sm ring-1 ring-[var(--line)] shadow-[0_60px_160px_-40px_rgba(0,0,0,0.9)]">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={img} alt={`${label} — Marquis Manor`} className="h-full w-full object-cover" />
+        <img src={img} alt={`${label} — Marquis Living`} className="h-full w-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-[rgba(6,6,7,0.6)] via-transparent to-[rgba(6,6,7,0.3)]" />
         <motion.span
           className="absolute bottom-6 left-6 serif text-2xl text-white"

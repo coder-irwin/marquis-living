@@ -198,9 +198,9 @@ export default function Shell({ children, cta = true }: { children: ReactNode; c
               </div>
             </div>
           </div>
-          <div className="foot-huge">MARQUIS MANOR</div>
+          <div className="foot-huge">MARQUIS LIVING</div>
           <div className="foot-bottom">
-            <p>© 2026 Marquis Manor</p>
+            <p>© 2026 Marquis Living</p>
             <div style={{ display: "flex", gap: 22 }}><a href="#">Privacy</a><a href="#">Terms</a></div>
           </div>
         </div>

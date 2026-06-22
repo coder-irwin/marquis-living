@@ -49,7 +49,7 @@ export default function CatalogueParallax() {
     <div ref={ref} className="cat">
       <style dangerouslySetInnerHTML={{ __html: CAT_CSS }} />
       <div className="wrap cat-head">
-        <span className="ey rv">The Marquis Manor Catalogue</span>
+        <span className="ey rv">The Marquis Living Catalogue</span>
         <h2 className="serif cat-title rv">Every room, <br /> one quiet language.</h2>
         <p className="cat-lead rv">
           Living rooms, suites, kitchens and the in-between corners you didn&apos;t know you&apos;d love most — each

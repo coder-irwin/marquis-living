@@ -17,7 +17,7 @@ export default function Process() {
           <p className="eyebrow mb-6">The Craft</p>
           <AnimatedText el="h2" text="From a story to a sculpture." className="display text-[clamp(2rem,4.5vw,4rem)]" />
           <Reveal delay={0.1} className="mt-8 max-w-sm text-muted">
-            Four stages take each Marquis Manor piece from a single idea to a hand-finished work of functional art.
+            Four stages take each Marquis Living piece from a single idea to a hand-finished work of functional art.
           </Reveal>
         </div>
         <div>

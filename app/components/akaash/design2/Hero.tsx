@@ -76,7 +76,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.25 }}
         >
-          Marquis Manor · Interiors — Est. under an open sky
+          Marquis Living · Interiors — Est. under an open sky
         </motion.p>
 
         <motion.h1
@@ -141,14 +141,14 @@ export default function Hero() {
               loop
               playsInline
               preload="metadata"
-              aria-label="Marquis Manor studio showreel"
+              aria-label="Marquis Living studio showreel"
               className="h-full w-full object-cover"
               style={{ y: frameY, scale: frameScale }}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink)] via-[var(--ink)]/35 to-transparent" />
             <div className="absolute bottom-5 left-5 right-5 flex items-end justify-between">
               <span className="eyebrow">Chapter 00 — The Home You Imagine</span>
-              <span className="serif text-xl text-[var(--paper)]">Marquis Manor</span>
+              <span className="serif text-xl text-[var(--paper)]">Marquis Living</span>
             </div>
           </div>
         </motion.div>

@@ -55,7 +55,7 @@ export function BlueprintReveal() {
             Watch the line<br />become <em>light</em>.
           </h2>
           <p>
-            Every Marquis Manor project travels from a precise technical blueprint to
+            Every Marquis Living project travels from a precise technical blueprint to
             a fully lit, photoreal render. Drag the handle to move between the drawing
             and the daylight — the same room, twice.
           </p>

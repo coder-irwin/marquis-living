@@ -13,7 +13,7 @@ export default function Footer() {
       </nav>
 
       <div className="mx-auto mt-12 flex max-w-4xl flex-col items-center gap-2 border-t border-[var(--line)] pt-6 text-xs text-[var(--soft)]">
-        <span>© {new Date().getFullYear()} Marquis Manor — interior architecture, made in-house.</span>
+        <span>© {new Date().getFullYear()} Marquis Living — interior architecture, made in-house.</span>
         <span>Design 5 — /akaash/design5</span>
       </div>
     </footer>

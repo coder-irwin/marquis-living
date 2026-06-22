@@ -1,4 +1,4 @@
-// Akaash · Design 4 — "Atrium" content + imagery for Marquis Manor.
+// Akaash · Design 4 — "Atrium" content + imagery for Marquis Living.
 import { IMG } from "../../images";
 
 const P = "/glocal-portfolio";

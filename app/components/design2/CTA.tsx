@@ -32,7 +32,7 @@ export default function CTA() {
           transition={{ delay: 0.2, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           className="mt-8 max-w-xl text-lg text-cream/75"
         >
-          Tell us the collection or piece you love — a designer is ready to help you bring a Marquis Manor original home.
+          Tell us the collection or piece you love — a designer is ready to help you bring a Marquis Living original home.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 20 }}

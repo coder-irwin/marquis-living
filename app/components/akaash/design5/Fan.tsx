@@ -52,7 +52,7 @@ export default function Fan() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={src}
-                alt={`Marquis Manor project ${i + 1}`}
+                alt={`Marquis Living project ${i + 1}`}
                 loading="lazy"
                 className="h-full w-full object-cover"
               />

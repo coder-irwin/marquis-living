@@ -22,7 +22,7 @@ export default function Home() {
             </div>
             <div className="hero-side">
               <p>
-                Marquis Manor turns blueprints into rooms you can feel — photoreal
+                Marquis Living turns blueprints into rooms you can feel — photoreal
                 renders, walkthroughs and virtual tours, lit honestly and delivered
                 worldwide.
               </p>
@@ -39,7 +39,7 @@ export default function Home() {
             </video>
             <div className="hero-video-veil" />
             <div className="hero-stat"><b>11</b><span>Years in light</span></div>
-            <div className="hero-tag"><span className="hero-play" />Studio showreel — Marquis Manor ’26</div>
+            <div className="hero-tag"><span className="hero-play" />Studio showreel — Marquis Living ’26</div>
           </div>
         </div>
 

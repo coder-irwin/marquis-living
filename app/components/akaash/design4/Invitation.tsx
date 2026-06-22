@@ -37,7 +37,7 @@ export default function Invitation() {
         <span className="serif text-lg text-[var(--bone)]">
           Marquis<span className="text-[var(--gold)]">·</span>Manor
         </span>
-        <span>© {new Date().getFullYear()} Marquis Manor — a living piece of architecture.</span>
+        <span>© {new Date().getFullYear()} Marquis Living — a living piece of architecture.</span>
         <span>Design 4 — /akaash/design4</span>
       </div>
     </footer>

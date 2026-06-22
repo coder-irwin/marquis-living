@@ -16,7 +16,7 @@ export default function CTABanner() {
     <section ref={ref} className="ctb">
       <style dangerouslySetInnerHTML={{ __html: CTB_CSS }} />
       <motion.div style={{ y }} className="ctb-bg">
-        <img src={IMG} alt="A Marquis Manor home styled in situ" loading="lazy" />
+        <img src={IMG} alt="A Marquis Living home styled in situ" loading="lazy" />
         <div className="ctb-veil" />
       </motion.div>
 

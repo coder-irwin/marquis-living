@@ -13,7 +13,7 @@ export default function CTA() {
   return (
     <section id="contact" ref={ref} className="relative flex min-h-[90vh] items-center overflow-hidden">
       <motion.div style={{ y }} className="absolute inset-0 -z-10 scale-110">
-        <img src={IMG.cta} alt="A Marquis Manor piece styled in situ" className="h-full w-full object-cover" />
+        <img src={IMG.cta} alt="A Marquis Living piece styled in situ" className="h-full w-full object-cover" />
         <div className="absolute inset-0 bg-bg/75" />
       </motion.div>
 
@@ -21,7 +21,7 @@ export default function CTA() {
         <p className="eyebrow mb-8">(05) — Enquire</p>
         <AnimatedText
           el="h2"
-          text="Bring a Marquis Manor piece home."
+          text="Bring a Marquis Living piece home."
           className="display max-w-4xl text-[clamp(2.4rem,6.5vw,6.5rem)]"
         />
         <motion.p

@@ -395,7 +395,7 @@ html.lenis body {
 }
 
 /* =====================================================================
-   Akaash · Design 3 — "Ink & Atelier" (Marquis Manor)
+   Akaash · Design 3 — "Ink & Atelier" (Marquis Living)
    A warm-paper, editorial interiors site. The hero uses the InkReveal
    canvas (app/components/ui/ink-reveal.tsx): the page reads as blank
    warm paper, and the visitor's cursor inks it away to reveal the room
@@ -514,7 +514,7 @@ html.lenis body {
 }
 
 /* =====================================================================
-   Akaash · Design 4 — "Atrium" (Marquis Manor)
+   Akaash · Design 4 — "Atrium" (Marquis Living)
    One continuous cinematic descent through a luxury home. A persistent
    WebGL light field lives behind every section; sections move past it
    like a slow camera. Namespaced under .d4.
@@ -654,7 +654,7 @@ html.lenis body {
 }
 
 /* =====================================================================
-   Akaash · Design 5 — "Aperture" (Marquis Manor)
+   Akaash · Design 5 — "Aperture" (Marquis Living)
    A white, center-aligned, minimal premium site. Every section is composed
    on the centre line; the signature move is a scroll-driven circular
    aperture you step through into the home. Namespaced under .d5.
@@ -776,10 +776,10 @@ html.lenis body {
 }
 
 /* =====================================================================
-   Akaash · Design 6 — "Atelier" (Marquis Manor)
+   Akaash · Design 6 — "Atelier" (Marquis Living)
    Inspired only by the FEEL of a modern studio site: light/airy off-white,
    oversized bold sans headlines, a teal accent, word-stagger hero reveal and
-   restrained staggered fade-ins. All copy is Marquis Manor; no third-party
+   restrained staggered fade-ins. All copy is Marquis Living; no third-party
    content or imagery. Namespaced under .d6.
    ===================================================================== */
 .d6 {

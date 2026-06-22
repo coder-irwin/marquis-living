@@ -12,7 +12,7 @@ export default function Services() {
           <h1>Everything from<br />line to <em>light</em>.</h1>
           <div className="phero-sub">
             <p>Whatever stage you&apos;re at — a napkin sketch or a finished set of drawings — there&apos;s a service here to carry it the rest of the way to photoreal.</p>
-            <span className="crumbs"><b>Marquis Manor</b> / Services</span>
+            <span className="crumbs"><b>Marquis Living</b> / Services</span>
           </div>
           <div className="phero-band img-reveal"><img src={PHOTOS[9]} alt="Render workspace" /></div>
         </div>

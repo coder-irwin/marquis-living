@@ -18,7 +18,7 @@ export default function Gallery() {
         <div className="wrap">
           <div className="gal-grid">
             {PHOTOS.map((src, i) => (
-              <div className="g-item ir" key={i}><img src={src} alt="Marquis Manor render" loading="lazy" /></div>
+              <div className="g-item ir" key={i}><img src={src} alt="Marquis Living render" loading="lazy" /></div>
             ))}
           </div>
         </div>

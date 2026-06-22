@@ -33,7 +33,7 @@ export default function Footer() {
               </ul>
             </div>
             <h6 className="text-[0.7rem] uppercase tracking-[0.2em] text-[#2f3a48]/60">
-              ©Marquis Manor
+              ©Marquis Living
             </h6>
           </div>
 

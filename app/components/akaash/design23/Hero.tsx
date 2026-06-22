@@ -25,7 +25,7 @@ const clamp = (v: number, a: number, b: number) => (v < a ? a : v > b ? b : v);
 type Pos = "center" | "bl" | "br" | "tl" | "tr" | "ml" | "mr";
 type HeroCue = { ar?: string; eyebrow?: string; line: string; pos: Pos; in: number; out: number };
 const CUES: HeroCue[] = [
-  { eyebrow: "An Atelier of Interiors · Est. 2014", line: "Marquis Manor", pos: "center", in: 0.0, out: 0.2 },
+  { eyebrow: "An Atelier of Interiors · Est. 2014", line: "Marquis Living", pos: "center", in: 0.0, out: 0.2 },
   { ar: "بيت النور", line: "Step into the home you've pictured.", pos: "bl", in: 0.27, out: 0.48 },
   { eyebrow: "Bespoke, to the last reveal", line: "Where light learns to live.", pos: "tr", in: 0.55, out: 0.76 },
   { eyebrow: "By appointment", line: "Come home to more.", pos: "br", in: 0.83, out: 1.0 },
@@ -285,7 +285,7 @@ function IntroCamera() {
                 <span className="hb hb--tl" /><span className="hb hb--tr" /><span className="hb hb--br" /><span className="hb hb--bl" />
                 <div className="hero-intro__label">
                   <span className="hero-intro__dot" />
-                  <span className="hero-intro__brand">Marquis Manor</span>
+                  <span className="hero-intro__brand">Marquis Living</span>
                 </div>
               </motion.div>
 

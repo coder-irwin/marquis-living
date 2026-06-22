@@ -1,57 +1,101 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# dependencies (match at any depth, incl. nested projects like akaash-site/)
+# ─────────────────────────────────────────────────────────────
+# Dependencies (matched at any depth, incl. nested projects
+# like akaash-site/akash-website-designs/)
+# ─────────────────────────────────────────────────────────────
 node_modules/
-/.pnp
+.pnp
 .pnp.*
 .yarn/*
 !.yarn/patches
 !.yarn/plugins
 !.yarn/releases
+!.yarn/sdks
 !.yarn/versions
+package-lock.json.*
+.npm/
 
-# testing
-/coverage
-
-# next.js (match at any depth)
+# ─────────────────────────────────────────────────────────────
+# Next.js build output (matched at any depth)
+# ─────────────────────────────────────────────────────────────
 .next/
-/out/
+out/
+build/
+dist/
+.turbo/
+.swc/
 
-# production
-/build
+# ─────────────────────────────────────────────────────────────
+# Testing / coverage
+# ─────────────────────────────────────────────────────────────
+coverage/
+*.lcov
 
-# misc
-.DS_Store
+# ─────────────────────────────────────────────────────────────
+# TypeScript
+# ─────────────────────────────────────────────────────────────
+*.tsbuildinfo
+next-env.d.ts
+
+# ─────────────────────────────────────────────────────────────
+# Environment / secrets (never commit)
+# ─────────────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
 *.pem
+*.key
 
-# debug
+# ─────────────────────────────────────────────────────────────
+# Logs & debug
+# ─────────────────────────────────────────────────────────────
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
-.env*
-
-# vercel
+# ─────────────────────────────────────────────────────────────
+# Deploy / platform
+# ─────────────────────────────────────────────────────────────
 .vercel
+.netlify
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
-
-# python (scripts/)
+# ─────────────────────────────────────────────────────────────
+# Python (scripts/)
+# ─────────────────────────────────────────────────────────────
 __pycache__/
 *.py[cod]
 *.egg-info/
 .venv/
 venv/
 
-# build output of nested designs
-/dist
-out/
-
-# large media / scratch assets (too big for git — keep out of repo)
+# ─────────────────────────────────────────────────────────────
+# Large / scratch media — kept out of git to keep the repo light.
+# IMPORTANT: assets under public/ are served by the site, so they
+# are explicitly re-included below (background videos, etc.).
+# ─────────────────────────────────────────────────────────────
 *.mp4
 *.mov
+*.avi
+*.webm
 *.zip
+*.tar.gz
+*.7z
+!public/**
+
+# Root scratch export (not used by the site)
+/Use_all_the_uploaded_images_as.mp4
+
+# ─────────────────────────────────────────────────────────────
+# OS / editor cruft
+# ─────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp
+*.swo

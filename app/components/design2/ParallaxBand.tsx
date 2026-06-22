@@ -20,7 +20,7 @@ export default function ParallaxBand() {
         style={{ opacity }}
         className="container max-w-4xl text-center font-serif text-[clamp(1.8rem,4.5vw,3.4rem)] leading-[1.3]"
       >
-        “A Marquis Manor piece is not bought. It is welcomed — and it stays for a lifetime.”
+        “A Marquis Living piece is not bought. It is welcomed — and it stays for a lifetime.”
       </motion.p>
     </section>
   );

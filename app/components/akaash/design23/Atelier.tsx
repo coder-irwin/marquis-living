@@ -34,8 +34,8 @@ export default function Atelier() {
           </div>
 
           <div ref={ref} className="atl-imgs">
-            <motion.figure style={{ y: y1 }} className="ir"><img src={ABOUT_1} alt="A Marquis Manor dining setting" loading="lazy" /></motion.figure>
-            <motion.figure style={{ y: y2 }} className="ir atl-img2"><img src={ABOUT_2} alt="A Marquis Manor bedroom setting" loading="lazy" /></motion.figure>
+            <motion.figure style={{ y: y1 }} className="ir"><img src={ABOUT_1} alt="A Marquis Living dining setting" loading="lazy" /></motion.figure>
+            <motion.figure style={{ y: y2 }} className="ir atl-img2"><img src={ABOUT_2} alt="A Marquis Living bedroom setting" loading="lazy" /></motion.figure>
           </div>
         </div>
       </div>

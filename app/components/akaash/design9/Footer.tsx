@@ -36,7 +36,7 @@ export default function Footer() {
 
         <div className="mt-20 flex flex-col gap-10 border-t border-white/15 pt-10 md:flex-row md:items-end md:justify-between">
           <div>
-            <p className="text-lg font-semibold tracking-tight">Marquis Manor</p>
+            <p className="text-lg font-semibold tracking-tight">Marquis Living</p>
             <p className="mt-2 max-w-xs text-sm leading-relaxed text-white/55">
               Interior architecture, furniture, lighting and styling — designed,
               made and installed under one roof.
@@ -59,7 +59,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 flex items-center justify-between text-xs text-white/40">
-          <span>© 2026 Marquis Manor. All rights reserved.</span>
+          <span>© 2026 Marquis Living. All rights reserved.</span>
           <a href="#top" className="d9-btn !px-5 !py-2.5 !text-xs">
             Back to top ↑
           </a>

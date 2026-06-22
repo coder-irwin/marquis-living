@@ -54,7 +54,7 @@ export function GalleryWall() {
           <div className="wall-col" data-par={c.speed} key={ci}>
             {c.imgs.map((src, i) => (
               <div className="wall-item img-reveal" key={i}>
-                <img src={src} alt="Marquis Manor render" loading="lazy" />
+                <img src={src} alt="Marquis Living render" loading="lazy" />
               </div>
             ))}
           </div>
@@ -101,7 +101,7 @@ export function PhotoMarquee({ offset = 0, reverse = false }: { offset?: number;
       <div className={`pm-track${reverse ? " rev" : ""}`}>
         {[...imgs, ...imgs].map((src, i) => (
           <div className="pm-item" key={i}>
-            <img src={src} alt="Marquis Manor interior" loading="lazy" />
+            <img src={src} alt="Marquis Living interior" loading="lazy" />
           </div>
         ))}
       </div>

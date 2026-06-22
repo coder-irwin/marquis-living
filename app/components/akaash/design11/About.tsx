@@ -12,8 +12,8 @@ export default function About() {
           <span className="eyebrow">About the studio</span>
           <h1>We make rooms<br /><em>believable</em>.</h1>
           <div className="phero-sub">
-            <p>Marquis Manor is a small studio with a single obsession: light. We&apos;ve spent over a decade learning how daylight behaves in a space — and how to put it back, render after render.</p>
-            <span className="crumbs"><b>Marquis Manor</b> / About</span>
+            <p>Marquis Living is a small studio with a single obsession: light. We&apos;ve spent over a decade learning how daylight behaves in a space — and how to put it back, render after render.</p>
+            <span className="crumbs"><b>Marquis Living</b> / About</span>
           </div>
           <div className="phero-band img-reveal"><img src={PHOTOS[0]} alt="Studio interior" /></div>
         </div>

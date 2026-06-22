@@ -51,7 +51,7 @@ export default function LightStudy() {
           {/* the room — only seen where the light falls */}
           <motion.img
             src={SPOTLIGHT_IMG}
-            alt="A dark interior revealed by light — Marquis Manor"
+            alt="A dark interior revealed by light — Marquis Living"
             className="absolute inset-0 h-full w-full object-cover"
             style={{
               WebkitMaskImage: mask,

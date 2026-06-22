@@ -84,7 +84,7 @@ export default function Home() {
 
       {/* FULL-BLEED BAND */}
       <section className="band ir">
-        <img className="par" data-par="-60" src={PHOTOS[5]} alt="Marquis Manor interior" loading="lazy" />
+        <img className="par" data-par="-60" src={PHOTOS[5]} alt="Marquis Living interior" loading="lazy" />
       </section>
 
       {/* PROCESS */}
@@ -135,7 +135,7 @@ export default function Home() {
           </div>
           <div className="gal-grid">
             {pick(9, 2).map((src, i) => (
-              <div className="g-item ir" key={i}><img src={src} alt="Marquis Manor render" loading="lazy" /></div>
+              <div className="g-item ir" key={i}><img src={src} alt="Marquis Living render" loading="lazy" /></div>
             ))}
           </div>
         </div>

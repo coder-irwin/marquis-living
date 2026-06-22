@@ -2,7 +2,7 @@
  * Akaash · Design 12 — "Loft" — a warm, editorial luxury-builder aesthetic
  * (clone of the loftthirtyone.com design language: Noto Serif Display + Fragment
  * Mono + Inter, sand accent on bone/near-black, Lenis smooth scroll, full-bleed
- * hero video, serif tickers, editorial project rows). Original Marquis Manor copy
+ * hero video, serif tickers, editorial project rows). Original Marquis Living copy
  * and the studio's own local imagery — nothing reproduced from the reference.
  */
 
@@ -10,7 +10,7 @@ export const BASE = "/akaash/design13";
 
 const P = "/glocal-portfolio";
 
-/** Real Marquis Manor renders shipped in /public (reliable — no external hosts). */
+/** Real Marquis Living renders shipped in /public (reliable — no external hosts). */
 export const PHOTOS = [
   `${P}/portfolio-2-2204562c.webp`,
   `${P}/portfolio-23-11724ad1.webp`,

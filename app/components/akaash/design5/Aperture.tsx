@@ -41,7 +41,7 @@ export default function Aperture() {
             loop
             playsInline
             preload="metadata"
-            aria-label="Marquis Manor studio showreel"
+            aria-label="Marquis Living studio showreel"
             className="h-full w-full object-cover"
             style={{ scale: imgScale }}
           />

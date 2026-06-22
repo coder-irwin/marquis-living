@@ -33,7 +33,7 @@ export default function Hero() {
         loop
         playsInline
         preload="metadata"
-        aria-label="Marquis Manor studio showreel"
+        aria-label="Marquis Living studio showreel"
         className="absolute inset-0 h-full w-full object-cover"
       />
       {/* readability scrim only along the bottom, where the headline sits */}
@@ -57,7 +57,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.1 }}
         >
-          <span className="eyebrow">Marquis Manor · Atelier of Interiors</span>
+          <span className="eyebrow">Marquis Living · Atelier of Interiors</span>
           {canHover ? (
             <span className="hidden items-center gap-2 text-xs tracking-[0.25em] text-[var(--paper)] md:flex">
               <span className="d3-bob">✦</span> MOVE TO REVEAL

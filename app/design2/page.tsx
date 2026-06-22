@@ -25,7 +25,7 @@ import CTA from "../components/design2/CTA";
 import Footer from "../components/design2/Footer";
 
 export const metadata: Metadata = {
-  title: "Design 2 — Marquis Manor",
+  title: "Design 2 — Marquis Living",
 };
 
 export default function Design2Page() {

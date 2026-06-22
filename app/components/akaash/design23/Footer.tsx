@@ -25,10 +25,10 @@ export default function Footer() {
           ))}
         </div>
 
-        <div className="ft-wordmark"><h2 className="serif">Marquis Manor</h2></div>
+        <div className="ft-wordmark"><h2 className="serif">Marquis Living</h2></div>
 
         <div className="ft-base">
-          <p>© 2026 Marquis Manor · All rights reserved.</p>
+          <p>© 2026 Marquis Living · All rights reserved.</p>
           <p>The art of interior design.</p>
         </div>
       </div>

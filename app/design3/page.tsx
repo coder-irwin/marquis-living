@@ -20,7 +20,7 @@ import CTA from "../components/design3/CTA";
 import Footer from "../components/design3/Footer";
 
 export const metadata: Metadata = {
-  title: "Design 3 — Marquis Manor · Online Interior Design",
+  title: "Design 3 — Marquis Living · Online Interior Design",
 };
 
 export default function Design3Page() {

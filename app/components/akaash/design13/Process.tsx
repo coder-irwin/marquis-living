@@ -8,7 +8,7 @@ export default function Process() {
           <span className="ey mono">How we work</span>
           <h1 className="lines" style={{ marginTop: 20 }}><span><i>A calm,</i></span><span><i><em>predictable</em> path.</i></span></h1>
           <div className="phero-sub">
-            <p>From the first conversation to final delivery, here is exactly how a Marquis Manor project moves — no guesswork, no surprises.</p>
+            <p>From the first conversation to final delivery, here is exactly how a Marquis Living project moves — no guesswork, no surprises.</p>
             <span className="mono">{PROCESS.length} stages</span>
           </div>
           <div className="phero-band ir"><img src={PHOTOS[4]} alt="Studio render" /></div>
@@ -28,7 +28,7 @@ export default function Process() {
       </section>
 
       <section className="band ir">
-        <img className="par" data-par="-60" src={PHOTOS[8]} alt="Marquis Manor interior" loading="lazy" />
+        <img className="par" data-par="-60" src={PHOTOS[8]} alt="Marquis Living interior" loading="lazy" />
       </section>
     </>
   );

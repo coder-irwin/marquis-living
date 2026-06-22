@@ -3,7 +3,7 @@ import Shell from "../../../components/akaash/design13/Shell";
 import Projects from "../../../components/akaash/design13/Projects";
 
 export const metadata: Metadata = {
-  title: "Projects — Marquis Manor · Loft",
+  title: "Projects — Marquis Living · Loft",
   description: "Selected architectural visualisation work — residential, commercial and hospitality projects, each lit from a real daylight study.",
 };
 

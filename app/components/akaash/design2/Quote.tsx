@@ -52,7 +52,7 @@ export default function Quote() {
           })}
         </p>
         <p className="mt-10 text-center text-sm tracking-[0.25em] text-[var(--marigold)]">
-          — MARQUIS MANOR
+          — MARQUIS LIVING
         </p>
       </div>
     </section>

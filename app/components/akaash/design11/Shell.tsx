@@ -413,7 +413,7 @@ export default function Shell({ children, cta = true }: { children: ReactNode; c
             </div>
           </div>
           <div className="foot-bottom">
-            <p>© 2026 Marquis Manor — All rights reserved.</p>
+            <p>© 2026 Marquis Living — All rights reserved.</p>
             <div className="foot-social">
               <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="2" y="2" width="20" height="20" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" /></svg></a>
               <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="2" y="2" width="20" height="20" rx="3" /><path d="M7 10v7M7 7v.01M11 17v-4a2 2 0 0 1 4 0v4M11 10v7" /></svg></a>

@@ -18,7 +18,7 @@ export default function SplitFeature() {
           <p className="eyebrow mb-6">The Atelier</p>
           <AnimatedText el="h2" text="Where stories become objects." className="display text-[clamp(2rem,4vw,3.6rem)]" />
           <Reveal delay={0.1} className="mt-8 max-w-md text-lg leading-relaxed text-muted">
-            Founded in 2010, Marquis Manor is a small team of designers, makers and stylists. Every collection begins as
+            Founded in 2010, Marquis Living is a small team of designers, makers and stylists. Every collection begins as
             a story and is sculpted by hand into furniture you live with — grounded in honest materials and meticulous
             proportion.
           </Reveal>

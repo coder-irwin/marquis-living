@@ -15,7 +15,7 @@ export default function RoomIdeas() {
             <p className="eyebrow mb-6">Design ideas</p>
             <AnimatedText el="h2" text="Every room, reimagined" className="display text-[clamp(2rem,4.5vw,3.6rem)]" />
           </div>
-          <p className="max-w-sm text-muted">From living rooms to hospitality spaces — explore what a Marquis Manor design looks like.</p>
+          <p className="max-w-sm text-muted">From living rooms to hospitality spaces — explore what a Marquis Living design looks like.</p>
         </div>
 
         <div className="grid grid-cols-2 gap-4 md:grid-cols-3">

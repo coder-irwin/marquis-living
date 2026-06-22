@@ -5,7 +5,7 @@ import { PORTFOLIO } from "./data";
 
 /**
  * Work — a three-column gallery of interiors that fade and lift in on a soft
- * stagger. Imagery is Unsplash (no glocal assets); titles are Marquis Manor.
+ * stagger. Imagery is Unsplash (no glocal assets); titles are Marquis Living.
  */
 export default function Portfolio() {
   return (
@@ -35,7 +35,7 @@ export default function Portfolio() {
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={p.src}
-                  alt={`${p.t} — Marquis Manor`}
+                  alt={`${p.t} — Marquis Living`}
                   loading="lazy"
                   className="h-full w-full object-cover transition-transform duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-105"
                 />

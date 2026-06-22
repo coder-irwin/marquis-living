@@ -5,7 +5,7 @@ import { IMG } from "./images";
 import { AnimatedText } from "./anim";
 
 const images = [
-  { src: IMG.hero, alt: "Marquis Manor styled living room" },
+  { src: IMG.hero, alt: "Marquis Living styled living room" },
   { src: IMG.console, alt: "Wing Console" },
   { src: IMG.chair, alt: "Cliffside Pavilion" },
   { src: IMG.centerTable, alt: "Buckle Center Table" },

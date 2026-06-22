@@ -30,7 +30,7 @@ export default function Hero() {
             transition={{ delay: 0.2, duration: 0.8 }}
             className="eyebrow mb-6"
           >
-            Online Interior Design · By Marquis Manor
+            Online Interior Design · By Marquis Living
           </motion.p>
 
           <h1 className="display text-[clamp(2.6rem,6.5vw,5.4rem)]">
@@ -45,7 +45,7 @@ export default function Hero() {
             transition={{ delay: 0.6, duration: 0.8, ease: EASE }}
             className="mt-8 max-w-md text-lg leading-relaxed text-muted"
           >
-            Work one-to-one with a Marquis Manor designer. Get photorealistic concepts for your room and a curated
+            Work one-to-one with a Marquis Living designer. Get photorealistic concepts for your room and a curated
             shopping list of hand-crafted pieces — all online.
           </motion.p>
 
@@ -90,7 +90,7 @@ export default function Hero() {
           className="relative"
         >
           <div className="aspect-[4/5] overflow-hidden rounded-[2rem]">
-            <img src={IMG.hero} alt="A Marquis Manor designed living room" className="h-full w-full object-cover" />
+            <img src={IMG.hero} alt="A Marquis Living designed living room" className="h-full w-full object-cover" />
           </div>
           <motion.div
             initial={{ opacity: 0, y: 20 }}

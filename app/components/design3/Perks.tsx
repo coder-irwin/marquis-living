@@ -7,7 +7,7 @@ const STATS = [
   { value: 45, suffix: "%", label: "Up to, off at 350+ furniture partners" },
   { value: 2400, suffix: "+", label: "Homes designed and loved" },
   { value: 3, suffix: "", label: "Concepts to choose from" },
-  { value: 98, suffix: "%", label: "Would recommend Marquis Manor" },
+  { value: 98, suffix: "%", label: "Would recommend Marquis Living" },
 ];
 
 function Counter({ to, suffix }: { to: number; suffix: string }) {

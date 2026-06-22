@@ -4,7 +4,7 @@ import { useRef } from "react";
 
 // design23 port of the "offer-carousel": horizontal snap-scroll of cards
 // (image top + content bottom, tag, title, copy, footer brand + arrow),
-// repurposed as Marquis Manor signature collections. Scoped CSS; inline SVG
+// repurposed as Marquis Living signature collections. Scoped CSS; inline SVG
 // icons (no lucide); smooth scrollBy via header arrow controls.
 
 const COLLECTIONS = [
@@ -59,7 +59,7 @@ export default function Collections() {
               <div className="ofc-foot">
                 <div className="ofc-brand">
                   <span className="ofc-mono">✦</span>
-                  <div><b>Marquis Manor</b><span>{c.meta}</span></div>
+                  <div><b>Marquis Living</b><span>{c.meta}</span></div>
                 </div>
                 <span className="ofc-arrow">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7"><path d="M5 12h14M13 6l6 6-6 6" strokeLinecap="round" strokeLinejoin="round" /></svg>

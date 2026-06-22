@@ -32,7 +32,7 @@ export default function CTA() {
           transition={{ delay: 0.2, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           className="mx-auto mt-8 max-w-xl text-lg text-cream/75"
         >
-          Take the style quiz, meet your designer, and see your room reimagined with Marquis Manor — risk-free, you’ll
+          Take the style quiz, meet your designer, and see your room reimagined with Marquis Living — risk-free, you’ll
           love it guaranteed.
         </motion.p>
         <motion.div

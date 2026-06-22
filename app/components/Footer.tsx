@@ -47,12 +47,12 @@ export default function Footer() {
             transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
             className="display select-none text-center text-[clamp(3rem,17vw,15rem)] leading-[0.8] pb-[0.18em]"
           >
-            Marquis Manor
+            Marquis Living
           </motion.h2>
         </div>
 
         <div className="flex flex-col items-center justify-between gap-3 border-t border-line py-7 text-sm text-muted md:flex-row">
-          <p>© {new Date().getFullYear()} Marquis Manor. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Marquis Living. All rights reserved.</p>
           <p>The Art of Designing &amp; Crafting Luxury Furniture</p>
         </div>
       </div>

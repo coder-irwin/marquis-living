@@ -8,7 +8,7 @@ import Footer from "./Footer";
 
 export default function MarquisDesign6Site() {
   // `.d6` scopes the light, airy, teal-accented studio aesthetic — inspired
-  // only by the FEEL of the reference site; all content is Marquis Manor's.
+  // only by the FEEL of the reference site; all content is Marquis Living's.
   return (
     <div className="d6">
       <Nav />

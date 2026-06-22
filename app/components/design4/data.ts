@@ -20,7 +20,7 @@ export type Tile = {
   href: string;
 };
 
-// --- Two-column media blocks (Marquis Manor collections & pieces) ---
+// --- Two-column media blocks (Marquis Living collections & pieces) ---
 const VID = "https://videos.pexels.com/video-files";
 
 export const ROW_1: Tile[] = [

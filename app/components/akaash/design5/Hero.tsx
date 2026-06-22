@@ -25,7 +25,7 @@ export default function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.2 }}
       >
-        Marquis Manor — Interior Architecture
+        Marquis Living — Interior Architecture
       </motion.p>
 
       <motion.h1

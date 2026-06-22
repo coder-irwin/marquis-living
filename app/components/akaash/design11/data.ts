@@ -1,4 +1,4 @@
-/** Shared content + image helpers for Akaash · Design 11 (Marquis Manor "Aperture"). */
+/** Shared content + image helpers for Akaash · Design 11 (Marquis Living "Aperture"). */
 
 export const BASE = "/akaash/design11";
 
@@ -73,10 +73,10 @@ export const VALUES = [
 ];
 
 export const TIMELINE = [
-  { yr: "2014", h: "A desk and a single licence", p: "Marquis Manor began as a two-person studio rendering interiors for local architects after hours." },
+  { yr: "2014", h: "A desk and a single licence", p: "Marquis Living began as a two-person studio rendering interiors for local architects after hours." },
   { yr: "2018", h: "The Daylight method", p: "We formalised our light-first workflow — every project now opens with a site-specific daylight study." },
   { yr: "2021", h: "Across three continents", p: "Our work began shipping to studios in twelve countries, all delivered remotely and on time." },
-  { yr: "2026", h: "A full-suite studio", p: "From single stills to interactive virtual tours, Marquis Manor is now a complete visualisation partner." },
+  { yr: "2026", h: "A full-suite studio", p: "From single stills to interactive virtual tours, Marquis Living is now a complete visualisation partner." },
 ];
 
 export const TEAM = [

@@ -41,7 +41,7 @@ export default function Hero() {
         loop
         playsInline
         preload="metadata"
-        aria-label="Marquis Manor studio showreel"
+        aria-label="Marquis Living studio showreel"
       />
       <motion.div className="absolute inset-0 bg-black" style={{ opacity: overlay }} aria-hidden />
       <div
@@ -58,7 +58,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.7 }}
         >
-          Marquis Manor — Interior Atelier
+          Marquis Living — Interior Atelier
         </motion.p>
 
         <motion.h1

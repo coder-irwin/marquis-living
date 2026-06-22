@@ -25,7 +25,7 @@ export default function Footer() {
 
         <div className="mt-20 grid gap-10 border-t border-[var(--line)] pt-12 text-sm sm:grid-cols-2 md:grid-cols-4">
           <div>
-            <p className="text-lg font-semibold">Marquis Manor<span className="text-[var(--teal)]">.</span></p>
+            <p className="text-lg font-semibold">Marquis Living<span className="text-[var(--teal)]">.</span></p>
             <p className="mt-2 text-[var(--soft)]">Interior architecture, furniture &amp; light — made in-house.</p>
           </div>
           <div>
@@ -51,7 +51,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col gap-2 border-t border-[var(--line)] pt-6 text-xs text-[var(--soft)] md:flex-row md:justify-between">
-          <span>© {new Date().getFullYear()} Marquis Manor. All rights reserved.</span>
+          <span>© {new Date().getFullYear()} Marquis Living. All rights reserved.</span>
           <span>Design 6 — /akaash/design6</span>
         </div>
       </div>

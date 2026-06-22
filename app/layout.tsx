@@ -17,9 +17,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Marquis Manor — The Art of Designing & Crafting Luxury Furniture",
+  title: "Marquis Living — The Art of Designing & Crafting Luxury Furniture",
   description:
-    "Marquis Manor crafts art-inspired luxury furniture collections — Ocean, Astronomica, Jungle Book and more. Grandeur, artistry and effortless panache.",
+    "Marquis Living crafts art-inspired luxury furniture collections — Ocean, Astronomica, Jungle Book and more. Grandeur, artistry and effortless panache.",
 };
 
 export default function RootLayout({

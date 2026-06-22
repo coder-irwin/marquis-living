@@ -1,5 +1,5 @@
 /**
- * Real, on-brand Marquis Manor media for the design11 "maximal" build.
+ * Real, on-brand Marquis Living media for the design11 "maximal" build.
  * All paths are local files in /public (guaranteed to load) plus a couple of
  * allowlisted Pexels b-roll clips for full-bleed video bands.
  */

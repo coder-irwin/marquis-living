@@ -17,7 +17,7 @@ export default function MarquisHero() {
     <ScrollExpandMedia
       mediaSrc={VIDEO_SRC}
       posterSrc={IMG.scene2}
-      title='Marquis Manor'
+      title='Marquis Living'
       date='The Art of Luxury Furniture'
       scrollToExpand='Scroll to reveal'
       /* ---------- ADJUST THE EXPANSION HERE ---------- */
@@ -36,7 +36,7 @@ export default function MarquisHero() {
           Art-inspired collections, sculpted by hand into the soul of a room.
         </h2>
         <p className='mt-8 text-lg leading-relaxed text-muted'>
-          From the depths of the Ocean to the wonder of the cosmos, every Marquis Manor piece begins as a story and
+          From the depths of the Ocean to the wonder of the cosmos, every Marquis Living piece begins as a story and
           becomes functional art — crafted from responsibly sourced materials with meticulous attention to proportion,
           line and finish.
         </p>

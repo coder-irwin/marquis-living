@@ -20,7 +20,7 @@ export default function Showcase() {
     <section ref={ref} className="relative h-[70vh] min-h-[440px] w-full overflow-hidden">
       <motion.img
         src={FEATURE_IMG}
-        alt="A completed Marquis Manor interior"
+        alt="A completed Marquis Living interior"
         className="absolute inset-0 h-[124%] w-full object-cover"
         style={{ y }}
       />

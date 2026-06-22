@@ -18,7 +18,7 @@ export default function Contact() {
           <h1>Let&apos;s begin in<br /><em>daylight</em>.</h1>
           <div className="phero-sub">
             <p>Tell us about the room, the building, or the idea. We read every message ourselves and reply — usually within a day.</p>
-            <span className="crumbs"><b>Marquis Manor</b> / Contact</span>
+            <span className="crumbs"><b>Marquis Living</b> / Contact</span>
           </div>
           <div className="phero-band img-reveal"><img src={PHOTOS[10]} alt="Sunlit interior" /></div>
         </div>
@@ -44,8 +44,8 @@ export default function Contact() {
       {/* twin image split — fills the space with real work */}
       <section className="contact-gallery">
         <div className="wrap cg-grid">
-          <div className="cg-item img-reveal" data-par="-22"><img src={PHOTOS[3]} alt="Marquis Manor render" loading="lazy" /></div>
-          <div className="cg-item img-reveal" data-par="26"><img src={PHOTOS[12]} alt="Marquis Manor render" loading="lazy" /></div>
+          <div className="cg-item img-reveal" data-par="-22"><img src={PHOTOS[3]} alt="Marquis Living render" loading="lazy" /></div>
+          <div className="cg-item img-reveal" data-par="26"><img src={PHOTOS[12]} alt="Marquis Living render" loading="lazy" /></div>
         </div>
       </section>
 

@@ -14,7 +14,7 @@ export default function Transformation() {
             <AnimatedText el="h2" text="Drag to see the transformation" className="display text-[clamp(2rem,4.5vw,3.6rem)]" />
           </div>
           <p className="max-w-sm text-muted">
-            Same room, reimagined with Marquis Manor pieces. Drag the handle — before on the left, after on the right.
+            Same room, reimagined with Marquis Living pieces. Drag the handle — before on the left, after on the right.
           </p>
         </div>
 

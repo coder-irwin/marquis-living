@@ -32,7 +32,7 @@ export default function Threshold() {
           animate={{ opacity: 1 }}
           transition={{ duration: 1.4, delay: 0.2 }}
         >
-          Marquis Manor — Atelier of Architectural Interiors
+          Marquis Living — Atelier of Architectural Interiors
         </motion.p>
 
         <motion.h1

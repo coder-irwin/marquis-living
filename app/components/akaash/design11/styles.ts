@@ -1,5 +1,5 @@
 /**
- * Akaash · Design 11 — "Aperture / Daylight" multi-page set for Marquis Manor.
+ * Akaash · Design 11 — "Aperture / Daylight" multi-page set for Marquis Living.
  *
  * A bright, editorial, gallery-white studio site built on one idea:
  * "we draw daylight into space." Light theme throughout (warm bone + ink +

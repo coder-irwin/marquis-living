@@ -31,7 +31,7 @@ export default function MaskVideo() {
             loop
             playsInline
             preload="metadata"
-            aria-label="Marquis Manor showreel, masked into the headline"
+            aria-label="Marquis Living showreel, masked into the headline"
           />
           {/* Knockout panel: covers the video except where the text is cut out. */}
           <svg

@@ -23,9 +23,9 @@ export default function Work() {
           <h1>Rooms before<br />they were <em>built</em>.</h1>
           <div className="phero-sub">
             <p>A cross-section of recent projects — residential, commercial and hospitality — each one lit from a real, site-specific daylight study.</p>
-            <span className="crumbs"><b>Marquis Manor</b> / Work</span>
+            <span className="crumbs"><b>Marquis Living</b> / Work</span>
           </div>
-          <div className="phero-band img-reveal"><img src={PHOTOS[1]} alt="Featured Marquis Manor project" /></div>
+          <div className="phero-band img-reveal"><img src={PHOTOS[1]} alt="Featured Marquis Living project" /></div>
         </div>
       </section>
 

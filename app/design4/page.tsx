@@ -19,9 +19,9 @@ import {
 } from "../components/design4/data";
 
 export const metadata: Metadata = {
-  title: "Design 4 — Marquis Manor · Luxury Furniture & Interiors",
+  title: "Design 4 — Marquis Living · Luxury Furniture & Interiors",
   description:
-    "Marquis Manor — the art of designing and crafting luxury furniture. Grandeur, artistry and effortless panache.",
+    "Marquis Living — the art of designing and crafting luxury furniture. Grandeur, artistry and effortless panache.",
 };
 
 export default function Design4Page() {

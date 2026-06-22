@@ -1,9 +1,9 @@
-// Akaash · Design 9 — "Cinema" content + imagery for Marquis Manor.
+// Akaash · Design 9 — "Cinema" content + imagery for Marquis Living.
 //
 // This design re-creates the MOTION SET of the studio reference (full-screen
 // video masthead, word-by-word reveal, text-masked video, infinite marquees,
 // gradient shine text, glowing gradient button, slide-swap links and a scroll
-// zoom-parallax gallery). Every word below is original Marquis Manor copy and
+// zoom-parallax gallery). Every word below is original Marquis Living copy and
 // every asset is the client's own — nothing is copied from the reference.
 
 const P = "/glocal-portfolio";

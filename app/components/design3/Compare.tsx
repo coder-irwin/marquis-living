@@ -54,7 +54,7 @@ export default function Compare() {
             data-cursor
             className="rounded-3xl bg-cream p-8 text-bg md:p-10"
           >
-            <p className="text-sm uppercase tracking-[0.2em] text-bg/60">Marquis Manor online</p>
+            <p className="text-sm uppercase tracking-[0.2em] text-bg/60">Marquis Living online</p>
             <ul className="mt-7 flex flex-col gap-4">
               {US.map((t) => (
                 <li key={t} className="flex items-center gap-3">

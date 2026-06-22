@@ -1,4 +1,4 @@
-// Akaash · Design 3 — "Ink & Atelier" content + imagery for Marquis Manor.
+// Akaash · Design 3 — "Ink & Atelier" content + imagery for Marquis Living.
 // Self-hosted glocal interiors + a couple of verified shared interior scenes.
 import { IMG } from "../../images";
 

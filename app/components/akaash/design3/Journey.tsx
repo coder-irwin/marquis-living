@@ -92,7 +92,7 @@ export default function Journey() {
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src={s.img}
-                      alt={`${s.title} — ${s.line}, by Marquis Manor`}
+                      alt={`${s.title} — ${s.line}, by Marquis Living`}
                       loading="lazy"
                       className="h-full w-full object-cover"
                     />
