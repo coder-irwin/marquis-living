@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Design Showcase — Index</title>
+  <meta name="description" content="A collection of website design concepts. Browse each design from one place." />
+  <meta name="theme-color" content="#0b0a08" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230b0a08'/%3E%3Ctext x='16' y='24' font-size='22' text-anchor='middle' fill='%23c2a161'%3E%E2%9C%A6%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root{
+      --bg:#0b0a08; --bg-soft:#15120d; --paper:#f5efe4; --muted:#a59c8b;
+      --accent:#c2a161; --line:rgba(245,239,228,.12);
+      --font-serif:"Cormorant Garamond",Georgia,serif;
+      --font-sans:"Jost",system-ui,sans-serif;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{
+      background:var(--bg);color:var(--paper);font-family:var(--font-sans);
+      font-weight:300;line-height:1.5;min-height:100vh;
+      -webkit-font-smoothing:antialiased;overflow-x:hidden;
+    }
+    a{color:inherit;text-decoration:none}
+
+    .wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+
+    /* ---- header ---- */
+    .top{display:flex;align-items:center;justify-content:space-between;padding:30px 0}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:500;letter-spacing:.22em;font-size:.82rem}
+    .brand span{color:var(--accent);font-size:1.05rem}
+    .top__meta{color:var(--muted);font-size:.72rem;letter-spacing:.18em;text-transform:uppercase}
+
+    /* ---- hero ---- */
+    .hero{padding:60px 0 48px;text-align:center;position:relative}
+    .hero__eyebrow{color:var(--accent);letter-spacing:.32em;text-transform:uppercase;font-size:.72rem;margin-bottom:22px}
+    .hero__title{font-family:var(--font-serif);font-weight:500;line-height:1.02;
+      font-size:clamp(2.8rem,7vw,5.4rem);letter-spacing:-.01em}
+    .hero__title em{font-style:italic;color:var(--accent)}
+    .hero__lead{max-width:560px;margin:24px auto 0;color:var(--muted);font-size:1.04rem;font-weight:300}
+
+    /* ---- grid ---- */
+    .designs{padding:18px 0 80px}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
+    @media(max-width:760px){.grid{grid-template-columns:1fr}}
+
+    .card{
+      position:relative;display:block;border:1px solid var(--line);border-radius:18px;
+      overflow:hidden;background:var(--bg-soft);min-height:300px;
+      transition:transform .45s cubic-bezier(.2,.7,.2,1),border-color .45s;
+    }
+    .card:hover{transform:translateY(-6px);border-color:rgba(194,161,97,.55)}
+    .card__media{position:absolute;inset:0;overflow:hidden}
+    .card__media img{width:100%;height:100%;object-fit:cover;
+      filter:brightness(.62) saturate(1.05);transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .7s}
+    .card:hover .card__media img{transform:scale(1.06);filter:brightness(.74) saturate(1.1)}
+    .card__media::after{content:"";position:absolute;inset:0;
+      background:linear-gradient(180deg,rgba(11,10,8,.15) 0%,rgba(11,10,8,.55) 45%,rgba(11,10,8,.95) 100%)}
+
+    .card__body{position:relative;z-index:2;display:flex;flex-direction:column;height:100%;
+      min-height:300px;justify-content:flex-end;padding:28px}
+    .card__no{position:absolute;top:24px;left:28px;font-family:var(--font-serif);
+      font-size:1.4rem;color:var(--accent);letter-spacing:.05em}
+    .card__status{position:absolute;top:26px;right:24px;font-size:.62rem;letter-spacing:.2em;
+      text-transform:uppercase;padding:5px 11px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
+    .card__status--live{color:var(--bg);background:var(--accent);border-color:var(--accent);font-weight:500}
+    .card__name{font-family:var(--font-serif);font-weight:500;font-size:2rem;line-height:1.05}
+    .card__desc{color:var(--muted);font-size:.92rem;margin-top:8px;max-width:42ch}
+    .card__go{display:inline-flex;align-items:center;gap:8px;margin-top:18px;
+      font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
+    .card__go i{font-style:normal;transition:transform .4s}
+    .card:hover .card__go i{transform:translateX(6px)}
+
+    /* placeholder (no media) cards */
+    .card--soon{background:
+      radial-gradient(120% 100% at 50% 0%,rgba(194,161,97,.06),transparent 60%),var(--bg-soft);
+      pointer-events:none}
+    .card--soon .card__name,.card--soon .card__no{opacity:.55}
+    .card--soon .card__go{color:var(--muted)}
+
+    .foot{border-top:1px solid var(--line);padding:26px 0;text-align:center;
+      color:var(--muted);font-size:.76rem;letter-spacing:.04em}
+    .foot span{color:var(--accent)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <div class="brand"><span>✦</span> DESIGN SHOWCASE</div>
+      <div class="top__meta">Concept Index</div>
+    </div>
+
+    <header class="hero">
+      <p class="hero__eyebrow">Four directions · one home</p>
+      <h1 class="hero__title">Pick a <em>design</em><br/>to explore.</h1>
+      <p class="hero__lead">Every concept lives at its own endpoint. Start with Design One — the others are on the way.</p>
+    </header>
+
+    <section class="designs">
+      <div class="grid">
+
+        <!-- Design One — live -->
+        <a class="card" href="design-one/index.html">
+          <div class="card__media">
+            <img src="design-one/assets/frames/frame_0075.jpg" alt="Design One preview" loading="lazy" />
+          </div>
+          <div class="card__body">
+            <div class="card__no">01</div>
+            <div class="card__status card__status--live">Live</div>
+            <h2 class="card__name">Design One</h2>
+            <p class="card__desc">Marquis Manor — a scroll-driven luxury interior walkthrough.</p>
+            <span class="card__go">View design <i>→</i></span>
+          </div>
+        </a>
+
+        <!-- Design Two -->
+        <a class="card card--soon" href="design-two/index.html">
+          <div class="card__body">
+            <div class="card__no">02</div>
+            <div class="card__status">Coming soon</div>
+            <h2 class="card__name">Design Two</h2>
+            <p class="card__desc">Reserved endpoint — ready when you are.</p>
+            <span class="card__go">In progress <i>→</i></span>
+          </div>
+        </a>
+
+        <!-- Design Three -->
+        <a class="card card--soon" href="design-three/index.html">
+          <div class="card__body">
+            <div class="card__no">03</div>
+            <div class="card__status">Coming soon</div>
+            <h2 class="card__name">Design Three</h2>
+            <p class="card__desc">Reserved endpoint — ready when you are.</p>
+            <span class="card__go">In progress <i>→</i></span>
+          </div>
+        </a>
+
+        <!-- Design Four -->
+        <a class="card card--soon" href="design-four/index.html">
+          <div class="card__body">
+            <div class="card__no">04</div>
+            <div class="card__status">Coming soon</div>
+            <h2 class="card__name">Design Four</h2>
+            <p class="card__desc">Reserved endpoint — ready when you are.</p>
+            <span class="card__go">In progress <i>→</i></span>
+          </div>
+        </a>
+
+      </div>
+    </section>
+  </div>
+
+  <footer class="foot">
+    <div class="wrap">Design Showcase · <span>✦</span> built locally</div>
+  </footer>
+</body>
+</html>

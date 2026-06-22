@@ -1,7 +1,7 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# dependencies
-/node_modules
+# dependencies (match at any depth, incl. nested projects like akaash-site/)
+node_modules/
 /.pnp
 .pnp.*
 .yarn/*
@@ -13,8 +13,8 @@
 # testing
 /coverage
 
-# next.js
-/.next/
+# next.js (match at any depth)
+.next/
 /out/
 
 # production
@@ -39,3 +39,19 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# python (scripts/)
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# build output of nested designs
+/dist
+out/
+
+# large media / scratch assets (too big for git — keep out of repo)
+*.mp4
+*.mov
+*.zip

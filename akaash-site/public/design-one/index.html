@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Marquis Manor — Interior Design Atelier</title>
+  <meta name="description" content="Marquis Manor — a scroll-through journey of bespoke interior design. Walk through every room and let us design your space." />
+  <meta name="theme-color" content="#0b0a08" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Marquis Manor — Interior Design Atelier" />
+  <meta property="og:description" content="A scroll-through journey of bespoke interior design. Walk through every room and let us design your space." />
+  <meta property="og:image" content="assets/frames/frame_0001.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230b0a08'/%3E%3Ctext x='16' y='24' font-size='22' text-anchor='middle' fill='%23c2a161'%3E%E2%9C%A6%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ PRELOADER ============ -->
+  <div class="preloader" id="preloader">
+    <div class="preloader__inner">
+      <div class="preloader__mark">✦</div>
+      <div class="preloader__brand">MARQUIS MANOR</div>
+      <div class="preloader__bar"><span id="preloaderFill"></span></div>
+      <div class="preloader__pct"><span id="preloaderPct">0</span>%</div>
+      <div class="preloader__hint">Preparing your walkthrough</div>
+    </div>
+  </div>
+
+  <!-- ============ FIXED NAV ============ -->
+  <header class="nav" id="nav">
+    <a class="nav__brand" href="#top">
+      <span class="nav__mark">✦</span> MARQUIS MANOR
+    </a>
+    <nav class="nav__links">
+      <a href="#" data-go="0.28">Living</a>
+      <a href="#" data-go="0.40">Kitchen</a>
+      <a href="#" data-go="0.57">Bedroom</a>
+      <a href="#" data-go="0.77">Spa Bath</a>
+      <a href="#" data-go="0.99">Terrace</a>
+      <a href="#gallery">Gallery</a>
+    </nav>
+    <a href="#contact" class="nav__cta">Book a consultation</a>
+  </header>
+
+  <!-- ============ SCROLL-DRIVEN STORY ============ -->
+  <main id="top">
+    <section class="story" id="story">
+      <div class="stage" id="stage">
+        <canvas id="frameCanvas"></canvas>
+        <div class="stage__vignette"></div>
+        <div class="stage__grain"></div>
+
+        <!-- Chapter overlays (opacity driven by JS) -->
+        <div class="overlays" id="overlays">
+
+          <article class="chapter chapter--hero" data-chapter="exterior">
+            <p class="chapter__eyebrow">Marquis Manor · Est. 2014</p>
+            <h1 class="chapter__title">Walk into<br/>a home that<br/><em>feels like you.</em></h1>
+            <p class="chapter__lead">Scroll to step through the house, room by room. We'll meet you in every space.</p>
+            <div class="scrollcue"><span></span>Scroll to enter</div>
+          </article>
+
+          <article class="chapter chapter--left" data-chapter="foyer">
+            <p class="chapter__eyebrow">01 — The Grand Entrance</p>
+            <h2 class="chapter__title">A first<br/>breath of light.</h2>
+            <p class="chapter__lead">A double-height atrium, a floating stone staircase, the garden pulled indoors. The arrival sets the tone for the whole home.</p>
+            <button class="chapter__cta" data-room="Entrance &amp; Foyer">Design this entrance <i>→</i></button>
+          </article>
+
+          <article class="chapter chapter--right" data-chapter="living">
+            <p class="chapter__eyebrow">02 — The Living Room</p>
+            <h2 class="chapter__title">Where the<br/>day unwinds.</h2>
+            <p class="chapter__lead">Sculptural sofas, a linear fire, light that pools across stone. Living spaces that hold a crowd and a quiet evening alike.</p>
+            <button class="chapter__cta" data-room="Living Room">Design this living room <i>→</i></button>
+          </article>
+
+          <article class="chapter chapter--left" data-chapter="kitchen">
+            <p class="chapter__eyebrow">03 — Dining &amp; Kitchen</p>
+            <h2 class="chapter__title">Gathered<br/>around stone.</h2>
+            <p class="chapter__lead">A book-matched marble island, a table for ten, chef-grade joinery in smoked oak. The heart of the house, made to host.</p>
+            <button class="chapter__cta" data-room="Kitchen &amp; Dining">Design this kitchen <i>→</i></button>
+          </article>
+
+          <article class="chapter chapter--right" data-chapter="bedroom">
+            <p class="chapter__eyebrow">04 — The Master Suite</p>
+            <h2 class="chapter__title">A quiet<br/>place to land.</h2>
+            <p class="chapter__lead">A hushed palette, layered textiles, the hillside framed wall-to-wall. The last room you see at night — we make it the calmest.</p>
+            <button class="chapter__cta" data-room="Master Bedroom">Design this bedroom <i>→</i></button>
+          </article>
+
+          <article class="chapter chapter--left" data-chapter="dressing">
+            <p class="chapter__eyebrow">05 — The Dressing Room</p>
+            <h2 class="chapter__title">Everything<br/>in its place.</h2>
+            <p class="chapter__lead">Walnut joinery, backlit shelving, a glass-topped island for watches and keepsakes. A boutique of your own, off the suite.</p>
+            <button class="chapter__cta" data-room="Dressing Room">Design this wardrobe <i>→</i></button>
+          </article>
+
+          <article class="chapter chapter--right" data-chapter="bath">
+            <p class="chapter__eyebrow">06 — The Spa Bathroom</p>
+            <h2 class="chapter__title">Marble,<br/>steam &amp; silence.</h2>
+            <p class="chapter__lead">A freestanding soak, book-matched stone, twin vanities under warm halo light. Your private spa, designed around your morning.</p>
+            <button class="chapter__cta" data-room="Spa Bathroom">Design this bathroom <i>→</i></button>
+          </article>
+
+          <article class="chapter chapter--left" data-chapter="study">
+            <p class="chapter__eyebrow">07 — The Study</p>
+            <h2 class="chapter__title">Room<br/>to think.</h2>
+            <p class="chapter__lead">Floor-to-ceiling library, a solid desk, light from two sides. A quiet corner of the house built for focus and long evenings.</p>
+            <button class="chapter__cta" data-room="Study &amp; Library">Design this study <i>→</i></button>
+          </article>
+
+          <article class="chapter chapter--right" data-chapter="lounge">
+            <p class="chapter__eyebrow">08 — The Lounge</p>
+            <h2 class="chapter__title">Where<br/>evenings linger.</h2>
+            <p class="chapter__lead">A games table, a cinema wall, the city glittering past the glass. The room where the night keeps going.</p>
+            <button class="chapter__cta" data-room="Games Lounge">Design this lounge <i>→</i></button>
+          </article>
+
+          <article class="chapter chapter--center" data-chapter="terrace">
+            <p class="chapter__eyebrow">09 — The Terrace</p>
+            <h2 class="chapter__title">The skyline<br/>is your last wall.</h2>
+            <p class="chapter__lead">Indoor-outdoor living, framed for the golden hour. This is where your home opens up to the city.</p>
+            <button class="chapter__cta chapter__cta--solid" data-room="Whole Home">Design my whole home <i>→</i></button>
+          </article>
+
+        </div>
+
+        <!-- Progress rail -->
+        <div class="rail" id="rail">
+          <button class="rail__dot" data-go="0.02" aria-label="Exterior"><span>Exterior</span></button>
+          <button class="rail__dot" data-go="0.18" aria-label="Grand Foyer"><span>Foyer</span></button>
+          <button class="rail__dot" data-go="0.28" aria-label="Living Room"><span>Living</span></button>
+          <button class="rail__dot" data-go="0.40" aria-label="Dining &amp; Kitchen"><span>Kitchen</span></button>
+          <button class="rail__dot" data-go="0.57" aria-label="Master Suite"><span>Bedroom</span></button>
+          <button class="rail__dot" data-go="0.68" aria-label="Dressing Room"><span>Dressing</span></button>
+          <button class="rail__dot" data-go="0.77" aria-label="Spa Bathroom"><span>Spa Bath</span></button>
+          <button class="rail__dot" data-go="0.86" aria-label="Study"><span>Study</span></button>
+          <button class="rail__dot" data-go="0.93" aria-label="Lounge"><span>Lounge</span></button>
+          <button class="rail__dot" data-go="0.99" aria-label="Terrace"><span>Terrace</span></button>
+        </div>
+
+        <!-- Concierge / room-recognition assistant -->
+        <div class="concierge" id="concierge">
+          <div class="concierge__avatar">✦</div>
+          <div class="concierge__body">
+            <p class="concierge__label">Now viewing</p>
+            <p class="concierge__room" id="conciergeRoom">The Exterior</p>
+            <p class="concierge__ask" id="conciergeAsk">Like the look? I can design the rooms inside for you.</p>
+          </div>
+          <button class="concierge__btn" id="conciergeBtn" data-room="Living Room">Yes, design it</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STATS BAND ============ -->
+    <section class="stats">
+      <div class="stats__item"><span class="stats__no">11</span><span class="stats__label">Rooms reimagined</span></div>
+      <div class="stats__item"><span class="stats__no">120+</span><span class="stats__label">Homes delivered</span></div>
+      <div class="stats__item"><span class="stats__no">2014</span><span class="stats__label">Atelier founded</span></div>
+      <div class="stats__item"><span class="stats__no">48h</span><span class="stats__label">To your first concept</span></div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section class="gallery" id="gallery">
+      <div class="gallery__head">
+        <p class="panel__eyebrow">Inside the residence</p>
+        <h2 class="panel__title">Every room,<br/>up close.</h2>
+        <p class="gallery__intro">A closer look at the spaces you just walked through — each one designed, styled and finished by the Marquis Manor atelier.</p>
+      </div>
+      <div class="gallery__grid">
+        <figure class="shot shot--full">
+          <img src="assets/frames/frame_0001.jpg" alt="Modern villa exterior at dusk" loading="lazy" />
+          <figcaption><span class="shot__no">01</span> The Exterior</figcaption>
+        </figure>
+        <figure class="shot shot--half">
+          <img src="assets/frames/frame_0045.jpg" alt="Double-height entrance foyer with floating staircase" loading="lazy" />
+          <figcaption><span class="shot__no">02</span> Grand Foyer</figcaption>
+        </figure>
+        <figure class="shot shot--half">
+          <img src="assets/frames/frame_0075.jpg" alt="Open-plan living room with sectional sofas" loading="lazy" />
+          <figcaption><span class="shot__no">03</span> Living Room</figcaption>
+        </figure>
+        <figure class="shot shot--third">
+          <img src="assets/frames/frame_0105.jpg" alt="Marble island kitchen in smoked oak" loading="lazy" />
+          <figcaption><span class="shot__no">04</span> Kitchen &amp; Dining</figcaption>
+        </figure>
+        <figure class="shot shot--third">
+          <img src="assets/frames/frame_0135.jpg" alt="Master bedroom with hillside view" loading="lazy" />
+          <figcaption><span class="shot__no">05</span> Master Suite</figcaption>
+        </figure>
+        <figure class="shot shot--third">
+          <img src="assets/frames/frame_0165.jpg" alt="Walnut walk-in dressing room" loading="lazy" />
+          <figcaption><span class="shot__no">06</span> Dressing Room</figcaption>
+        </figure>
+        <figure class="shot shot--half">
+          <img src="assets/frames/frame_0180.jpg" alt="Spa bathroom with freestanding tub and stone wall" loading="lazy" />
+          <figcaption><span class="shot__no">07</span> Spa Bathroom</figcaption>
+        </figure>
+        <figure class="shot shot--half">
+          <img src="assets/frames/frame_0210.jpg" alt="Home study with floor-to-ceiling library" loading="lazy" />
+          <figcaption><span class="shot__no">08</span> The Study</figcaption>
+        </figure>
+        <figure class="shot shot--half">
+          <img src="assets/frames/frame_0225.jpg" alt="Games lounge with pool table and cinema wall" loading="lazy" />
+          <figcaption><span class="shot__no">09</span> The Lounge</figcaption>
+        </figure>
+        <figure class="shot shot--half">
+          <img src="assets/frames/frame_0240.jpg" alt="Rooftop terrace overlooking the city skyline at sunset" loading="lazy" />
+          <figcaption><span class="shot__no">10</span> The Terrace</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="panel panel--services">
+      <p class="panel__eyebrow">What we do</p>
+      <h2 class="panel__title">Full-home interior design,<br/>room by room.</h2>
+      <div class="grid">
+        <article class="card">
+          <div class="card__img"><img src="assets/frames/frame_0075.jpg" alt="Living room concept and mood" loading="lazy" /></div>
+          <span class="card__no">A</span><h3>Concept &amp; mood</h3>
+          <p>We translate how you want to live into a material palette, lighting plan and floor layout.</p>
+        </article>
+        <article class="card">
+          <div class="card__img"><img src="assets/frames/frame_0165.jpg" alt="Bespoke walnut joinery" loading="lazy" /></div>
+          <span class="card__no">B</span><h3>Bespoke joinery</h3>
+          <p>Custom millwork, wardrobes and kitchens built to the millimetre for your space.</p>
+        </article>
+        <article class="card">
+          <div class="card__img"><img src="assets/frames/frame_0135.jpg" alt="Styled and finished bedroom" loading="lazy" /></div>
+          <span class="card__no">C</span><h3>Styling &amp; install</h3>
+          <p>Furniture, art and the final 5% of styling that makes a room feel finished.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS ============ -->
+    <section class="panel panel--process">
+      <p class="panel__eyebrow">How it works</p>
+      <h2 class="panel__title">From first scroll<br/>to final styling.</h2>
+      <ol class="steps">
+        <li class="step">
+          <span class="step__no">01</span>
+          <h3>Discovery</h3>
+          <p>We learn how you live, room by room — your routines, your collections, the light you love.</p>
+        </li>
+        <li class="step">
+          <span class="step__no">02</span>
+          <h3>Concept</h3>
+          <p>Within 48 hours you receive a material palette, mood and layout for the spaces you choose.</p>
+        </li>
+        <li class="step">
+          <span class="step__no">03</span>
+          <h3>Make</h3>
+          <p>Bespoke joinery, lighting and furniture are drawn, sourced and built to the millimetre.</p>
+        </li>
+        <li class="step">
+          <span class="step__no">04</span>
+          <h3>Install</h3>
+          <p>We deliver, place and style every last detail — then hand you the keys to a finished home.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="panel panel--quotes">
+      <p class="panel__eyebrow">In their words</p>
+      <div class="quotes">
+        <figure class="quote">
+          <div class="quote__thumb"><img src="assets/frames/frame_0135.jpg" alt="Hillside residence bedroom" loading="lazy" /></div>
+          <blockquote>"They walked us through the whole house before a single wall moved. By install day it felt exactly like the renders — only warmer."</blockquote>
+          <figcaption><span class="quote__stars">★★★★★</span>Marielle &amp; Tom · Hillside Residence</figcaption>
+        </figure>
+        <figure class="quote">
+          <div class="quote__thumb"><img src="assets/frames/frame_0180.jpg" alt="City penthouse spa bathroom" loading="lazy" /></div>
+          <blockquote>"The dressing room and spa bath alone changed how our mornings feel. Worth every conversation."</blockquote>
+          <figcaption><span class="quote__stars">★★★★★</span>Priya N. · City Penthouse</figcaption>
+        </figure>
+        <figure class="quote">
+          <div class="quote__thumb"><img src="assets/frames/frame_0240.jpg" alt="Coastal villa terrace" loading="lazy" /></div>
+          <blockquote>"We picked three rooms to start. We ended up letting Marquis Manor do the entire home — and the terrace is now where we live."</blockquote>
+          <figcaption><span class="quote__stars">★★★★★</span>The Alvarez Family · Coastal Villa</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ CTA BANNER ============ -->
+    <section class="cta-banner">
+      <h2 class="cta-banner__title">Ready to walk through<br/>your own home?</h2>
+      <button class="cta-banner__btn" data-room="Whole Home">Start my design brief ✦</button>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="panel panel--contact" id="contact">
+      <div class="contact__grid">
+        <div class="contact__form">
+          <p class="panel__eyebrow">Start your project</p>
+          <h2 class="panel__title">Tell us about<br/>your space.</h2>
+          <form class="form" id="leadForm">
+            <div class="form__row">
+              <label>Your name<input type="text" name="name" placeholder="Jane Doe" required /></label>
+              <label>Email<input type="email" name="email" placeholder="you@email.com" required /></label>
+            </div>
+            <div class="form__row">
+              <label>Room(s) to design
+                <select name="room" id="formRoom">
+                  <option>Whole Home</option>
+                  <option>Entrance &amp; Foyer</option>
+                  <option>Living Room</option>
+                  <option>Kitchen &amp; Dining</option>
+                  <option>Master Bedroom</option>
+                  <option>Dressing Room</option>
+                  <option>Spa Bathroom</option>
+                  <option>Study &amp; Library</option>
+                  <option>Games Lounge</option>
+                  <option>Terrace</option>
+                </select>
+              </label>
+              <label>Budget
+                <select name="budget">
+                  <option>Exploring</option>
+                  <option>$25k – $75k</option>
+                  <option>$75k – $200k</option>
+                  <option>$200k+</option>
+                </select>
+              </label>
+            </div>
+            <label class="form__full">Anything you'd love<textarea name="notes" rows="3" placeholder="A warm, light-filled living room with a reading nook…"></textarea></label>
+            <button type="submit" class="form__submit">Request my design brief ✦</button>
+          </form>
+        </div>
+
+        <aside class="visit">
+          <figure class="visit__img">
+            <img src="assets/frames/frame_0045.jpg" alt="Marquis Manor atelier entrance" loading="lazy" />
+            <figcaption>The atelier · Bel Air</figcaption>
+          </figure>
+          <div class="visit__body">
+            <p class="panel__eyebrow">Visit the atelier</p>
+            <h3 class="visit__title">Come see it in person.</h3>
+            <p class="visit__copy">Book a private walkthrough of our studio and material library — or invite a designer to your space. We host by appointment six days a week.</p>
+            <ul class="visit__list">
+              <li><span>Head office</span>14 Mulholland Terrace<br/>Los Angeles, CA 90077</li>
+              <li><span>Opening hours</span>Mon–Fri · 9am – 6pm<br/>Saturday · by appointment</li>
+              <li><span>Talk to us</span><a href="mailto:hello@marquismanor.studio">hello@marquismanor.studio</a><br/><a href="tel:+13105550142">+1 (310) 555-0142</a></li>
+            </ul>
+            <button class="visit__btn" id="visitBtn" type="button">Book a visit <i>→</i></button>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__brand"><span>✦</span> MARQUIS MANOR</div>
+      <p>Marquis Manor · Interior Design · hello@marquismanor.studio</p>
+      <p class="footer__fine">A scroll-through concept experience.</p>
+    </footer>
+  </main>
+
+  <!-- ============ DESIGN MODAL ============ -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__card" role="dialog" aria-modal="true">
+      <button class="modal__x" data-close aria-label="Close">×</button>
+      <p class="modal__eyebrow">Bespoke interior</p>
+      <h3 class="modal__title" id="modalTitle">Design your Living Room</h3>
+      <p class="modal__copy">Leave your details and a Marquis Manor designer will send a tailored concept for this room within 48 hours.</p>
+      <form class="modal__form" id="modalForm">
+        <input type="text" name="name" placeholder="Your name" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <button type="submit">Send me a concept ✦</button>
+      </form>
+      <div class="modal__done" id="modalDone">
+        <div class="modal__check">✓</div>
+        <p>Beautiful. We'll be in touch about your <span id="modalDoneRoom">space</span>.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
