@@ -6,7 +6,8 @@ export const metadata: Metadata = {
 };
 
 const DESIGNS = [
-  { href: "/akaash/design23", n: "23", name: "Promenade", desc: "Scroll-driven house walkthrough · light editorial", tag: "Newest" },
+  { href: "/akaash/design25", n: "25", name: "Meridian", desc: "UX-led full journey · warm-ink luxury · one complete page", tag: "Newest" },
+  { href: "/akaash/design23", n: "23", name: "Promenade", desc: "Scroll-driven house walkthrough · light editorial" },
   { href: "/akaash/design13", n: "13", name: "Loft", desc: "Warm editorial luxury-builder · smooth scroll" },
   { href: "/akaash/design11", n: "11", name: "Aperture", desc: "Kinetic editorial · before/after reveal" },
   { href: "/akaash/design9", n: "09", name: "Cinema", desc: "Cinematic video · zoom-parallax gallery" },
