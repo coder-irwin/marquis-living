@@ -45,38 +45,38 @@ const FEATURES = [
 ];
 
 const STEPS = [
-  { n: "01", t: "Listen", p: "We walk your space and learn how you actually live." },
-  { n: "02", t: "Envision", p: "A first concept in your real rooms within 48 hours." },
-  { n: "03", t: "Craft", p: "Bespoke joinery and sourced stone, made to the drawing." },
-  { n: "04", t: "Reveal", p: "We build, style and light — then hand you the keys." },
+  { n: "الأول", t: "Listen", p: "We walk your space and learn how you actually live." },
+  { n: "الثاني", t: "Envision", p: "A first concept in your real rooms within 48 hours." },
+  { n: "الثالث", t: "Craft", p: "Bespoke joinery and sourced stone, made to the drawing." },
+  { n: "الرابع", t: "Reveal", p: "We build, style and light — then hand you the keys." },
 ];
 
 const G = "/design25/gallery";
 
 const WORK = [
-  { src: `${G}/living-marble.jpg`, tag: "Penthouse · Downtown", t: "The Quiet Penthouse" },
-  { src: `${G}/bedroom-canopy.jpg`, tag: "Villa · Emirates Hills", t: "The Master Suite" },
-  { src: `${G}/spa-bath.jpg`, tag: "Penthouse · Bluewaters", t: "The Spa Bath" },
-  { src: `${G}/study-library.jpg`, tag: "Apartment · DIFC", t: "The Library Study" },
-  { src: `${G}/kitchen-marble.jpg`, tag: "Villa · Palm Jumeirah", t: "Marble Kitchen" },
-  { src: `${G}/dining-arched.jpg`, tag: "Villa · Al Barari", t: "Formal Dining" },
-  { src: `${G}/living-fireplace.jpg`, tag: "Apartment · JLT", t: "Fireside Living" },
-  { src: `${G}/grand-stair.jpg`, tag: "Villa · Jumeirah", t: "The Grand Stair" },
+  { src: `${G}/living-marble.jpg`, tag: "Penthouse · Downtown Dubai", t: "Al Menara" },
+  { src: `${G}/bedroom-canopy.jpg`, tag: "Villa · Emirates Hills", t: "Al Zubara" },
+  { src: `${G}/spa-bath.jpg`, tag: "Penthouse · Bluewaters Island", t: "Al Nur" },
+  { src: `${G}/study-library.jpg`, tag: "Apartment · DIFC", t: "Al Qasr" },
+  { src: `${G}/kitchen-marble.jpg`, tag: "Villa · Palm Jumeirah", t: "Al Reem" },
+  { src: `${G}/dining-arched.jpg`, tag: "Villa · Al Barari", t: "Al Maha" },
+  { src: `${G}/living-fireplace.jpg`, tag: "Apartment · Jumeirah Bay", t: "Al Sahel" },
+  { src: `${G}/grand-stair.jpg`, tag: "Villa · Dubai Hills", t: "Al Dana" },
 ];
 
 const GALLERY = [
-  { src: `${G}/home-cinema.jpg`, t: "Private Cinema", tag: "Lower level" },
-  { src: `${G}/wine-cellar.jpg`, t: "The Wine Room", tag: "Cellar" },
-  { src: `${G}/terrace-view.jpg`, t: "Terrace & View", tag: "Outdoor" },
-  { src: `${G}/dining-oak.jpg`, t: "Oak Dining", tag: "Dining" },
-  { src: `${G}/living-lounge.jpg`, t: "The Lounge", tag: "Living" },
-  { src: `${G}/dining-pendant.jpg`, t: "Pendant Dining", tag: "Dining" },
-  { src: `${G}/bath-vanity.jpg`, t: "Double Vanity", tag: "Bathroom" },
-  { src: `${G}/arched-hall.jpg`, t: "The Arched Hall", tag: "Gallery" },
-  { src: `${G}/dressing-detail.jpg`, t: "Joinery Detail", tag: "Dressing" },
-  { src: `${G}/bedroom-suite.jpg`, t: "Guest Suite", tag: "Bedroom" },
-  { src: `${G}/wood-detail.jpg`, t: "Walnut & Light", tag: "Detail" },
-  { src: `${G}/dining-gallery.jpg`, t: "Gallery Dining", tag: "Dining" },
+  { src: `${G}/home-cinema.jpg`, t: "Al Anbar", tag: "Palm Jumeirah" },
+  { src: `${G}/wine-cellar.jpg`, t: "Al Murjan", tag: "Jumeirah Bay" },
+  { src: `${G}/terrace-view.jpg`, t: "Al Yasmin", tag: "Al Barari" },
+  { src: `${G}/dining-oak.jpg`, t: "Al Fanar", tag: "Emirates Hills" },
+  { src: `${G}/living-lounge.jpg`, t: "Al Naseem", tag: "Downtown Dubai" },
+  { src: `${G}/dining-pendant.jpg`, t: "Al Waha", tag: "Dubai Hills" },
+  { src: `${G}/bath-vanity.jpg`, t: "Al Rimal", tag: "District One" },
+  { src: `${G}/arched-hall.jpg`, t: "Al Falak", tag: "Bluewaters Island" },
+  { src: `${G}/dressing-detail.jpg`, t: "Al Joud", tag: "DIFC" },
+  { src: `${G}/bedroom-suite.jpg`, t: "Al Badr", tag: "City Walk" },
+  { src: `${G}/wood-detail.jpg`, t: "Al Sidra", tag: "Tilal Al Ghaf" },
+  { src: `${G}/dining-gallery.jpg`, t: "Al Hadiqa", tag: "Jumeirah" },
 ];
 
 const STATS = [
@@ -129,14 +129,12 @@ export default function Site() {
 
     const nav = root.querySelector<HTMLElement>(".nav");
     const prog = root.querySelector<HTMLElement>(".progress");
-    const floatCta = root.querySelector<HTMLElement>(".float-cta");
     const pars = reduce ? [] : Array.from(root.querySelectorAll<HTMLElement>(".par"));
 
     const onScroll = () => {
       const y = window.scrollY;
       if (prog) prog.style.transform = `scaleX(${clamp(y / Math.max(document.documentElement.scrollHeight - window.innerHeight, 1))})`;
       nav?.classList.toggle("solid", y > 60);
-      floatCta?.classList.toggle("show", y > window.innerHeight * 0.9);
       const vh = window.innerHeight;
       for (const el of pars) {
         const r = el.getBoundingClientRect();
@@ -253,9 +251,15 @@ export default function Site() {
       {/* ——— 2 · INTRODUCTION ——— */}
       <section className="pad" id="intro">
         <div className="wrap mani">
-          <div>
+          <div className="mani-copy">
             <span className="ey rv">Our belief</span>
             <p className="big rv2" style={{ marginTop: 18 }}>A home should feel <em>inevitable</em> — as if it could only ever have been this way. We don&apos;t decorate rooms; we resolve the whole house into one calm composition that fits the life inside it.</p>
+            <p className="mani-body rv2">For eighteen years we&apos;ve worked the way the best homes are made — slowly, attentively, and as one team. Architecture, interiors, joinery and styling all answer to a single vision, so nothing feels added on and everything feels considered. Walls move, light is reworked, and every material is chosen in person rather than specified from a catalogue.</p>
+            <p className="mani-body rv2">That patience is what you feel when you walk in. Proportions sit right, storage disappears into the joinery, and the rooms flow from one to the next without a seam. We hand back a house that holds the way you actually live — quiet where it should be quiet, generous where it matters, and finished down to the last grain of stone.</p>
+            <ul className="mani-points rv2">
+              <li><b>One studio</b><span>Design, build &amp; styling under a single, accountable roof.</span></li>
+              <li><b>Made, not bought</b><span>Bespoke joinery and stone drawn to your millimetre.</span></li>
+            </ul>
             <div className="by rv3">
               <img src="/design23/people/p4.jpg" alt="Yousef Haddad" />
               <div><b>Yousef Haddad</b><span>Founder &amp; Principal Designer</span></div>
@@ -263,7 +267,6 @@ export default function Site() {
           </div>
           <figure className="mani-fig rv2 par">
             <img src="/design23/products/p2.jpeg" alt="A considered Marquis Living study" />
-            <figcaption><b>48h</b><span>to first concept</span></figcaption>
           </figure>
         </div>
       </section>
@@ -531,8 +534,6 @@ export default function Site() {
           </div>
         </div>
       </footer>
-
-      <a href="#contact" className="float-cta magnetic">Book a consultation</a>
 
       {cookie && (
         <div className="cookie">

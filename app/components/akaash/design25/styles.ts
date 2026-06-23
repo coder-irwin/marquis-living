@@ -103,8 +103,8 @@ export const D25_CSS = `
 /* ——— scroll-scrub hero (frame-by-frame walkthrough) ——— */
 .d25 .hero-scrub{position:relative;}
 .d25 .scrub-tour{position:relative;width:100%;}
-.d25 .scrub-stage{position:sticky;top:0;height:100svh;width:100%;overflow:hidden;background:#000;contain:layout paint;}
-.d25 .scrub-frame{position:absolute;inset:0;overflow:hidden;background:#000;transform-origin:center center;will-change:transform;}
+.d25 .scrub-stage{position:sticky;top:0;height:100svh;width:100%;overflow:hidden;background:#fff;contain:layout paint;}
+.d25 .scrub-frame{position:absolute;inset:0;overflow:hidden;background:#fff;transform-origin:center center;will-change:transform;}
 .d25 .scrub-frame canvas,.d25 .scrub-frame video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;transform:translateZ(0);backface-visibility:hidden;}
 .d25 .scrub-vignette{position:absolute;inset:0;pointer-events:none;
   background:radial-gradient(120% 92% at 50% 36%,transparent 50%,rgba(14,12,9,.5) 100%),
@@ -150,10 +150,16 @@ export const D25_CSS = `
 @keyframes d25marq{to{transform:translateX(-50%)}}
 
 /* ——— introduction ——— */
-.d25 .mani{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(36px,5vw,84px);align-items:center;}
+.d25 .mani{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(36px,5vw,84px);align-items:stretch;}
+.d25 .mani .mani-copy{display:flex;flex-direction:column;justify-content:center;}
 .d25 .mani .big{font-family:var(--serif);font-weight:400;font-size:clamp(16px,1.7vw,22px);line-height:1.4;letter-spacing:.002em;}
 .d25 .mani .big em{color:var(--accent2);}
-.d25 .mani .by{margin-top:26px;display:flex;align-items:center;gap:14px;}
+.d25 .mani .mani-body{margin-top:18px;font-size:15px;line-height:1.75;color:var(--muted);max-width:52ch;}
+.d25 .mani .mani-points{margin-top:24px;display:grid;grid-template-columns:1fr 1fr;gap:18px 28px;}
+.d25 .mani .mani-points li{padding-left:16px;border-left:2px solid var(--accent);}
+.d25 .mani .mani-points b{display:block;font-weight:500;font-size:14px;color:var(--ink);}
+.d25 .mani .mani-points span{display:block;margin-top:4px;font-size:13px;line-height:1.55;color:var(--muted);}
+.d25 .mani .by{margin-top:30px;display:flex;align-items:center;gap:14px;}
 .d25 .mani .by img{width:46px;height:46px;border-radius:50%;object-fit:cover;}
 .d25 .mani .by b{display:block;font-weight:500;font-size:13.5px;}
 .d25 .mani .by span{font-size:12px;color:var(--muted);}
@@ -196,7 +202,7 @@ export const D25_CSS = `
 .d25 .step{border-top:1px solid var(--line);padding-top:22px;position:relative;}
 .d25 .step::before{content:"";position:absolute;top:-1px;left:0;width:0;height:1px;background:var(--accent);transition:width 1s var(--ease);}
 .d25 .step.in::before{width:100%;}
-.d25 .step .n{font-family:var(--serif);font-size:14px;color:var(--accent2);letter-spacing:.12em;}
+.d25 .step .n{font-family:var(--serif);font-size:18px;color:var(--accent2);direction:ltr;text-align:left;line-height:1;}
 .d25 .step h3{font-family:var(--serif);font-weight:400;font-size:clamp(16px,1.4vw,19px);margin:10px 0 8px;}
 .d25 .step p{color:var(--muted);font-size:13px;line-height:1.65;}
 
@@ -421,11 +427,7 @@ export const D25_CSS = `
 .d25 .foot-bot .socials{display:flex;gap:22px;}
 .d25 .foot-bot a:hover{color:var(--accent2);}
 
-/* ——— floating CTA + cookie ——— */
-.d25 .float-cta{position:fixed;right:24px;bottom:24px;z-index:90;display:inline-flex;align-items:center;gap:9px;background:var(--accent);color:var(--ink-d);border-radius:40px;padding:13px 22px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;box-shadow:0 16px 40px rgba(0,0,0,.4);transform:translateY(140%);transition:transform .6s var(--ease);}
-.d25 .float-cta.show{transform:none;}
-.d25 .float-cta:hover{background:#d9bd83;}
-@media (max-width:720px){.d25 .float-cta{display:none;}}
+/* ——— cookie ——— */
 .d25 .cookie{position:fixed;left:24px;bottom:24px;z-index:95;max-width:360px;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:22px 24px;box-shadow:0 20px 50px rgba(0,0,0,.5);}
 .d25 .cookie p{font-size:12.5px;line-height:1.6;color:var(--muted);}
 .d25 .cookie p b{color:var(--ink);font-weight:500;}
@@ -508,6 +510,7 @@ export const D25_CSS = `
 @media (max-width:760px){
   .d25 .nav-links,.d25 .nav-cta{display:none;}
   .d25 .burger{display:block;}
+  .d25 .mani .mani-points{grid-template-columns:1fr;gap:14px;}
   .d25 .case-ba,.d25 .foot-news form{}
   .d25 .foot-news form{flex-direction:column;min-width:0;width:100%;}
   .d25 .hero-foot{flex-direction:column;align-items:flex-start;}

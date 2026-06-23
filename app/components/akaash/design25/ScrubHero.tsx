@@ -39,7 +39,6 @@ export default function ScrubHero() {
   const stageRef = useRef<HTMLDivElement>(null);
   const frameRef = useRef<HTMLDivElement>(null);
   const cueRefs = useRef<(HTMLDivElement | null)[]>([]);
-  const scrollCueRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const canvas = canvasRef.current!;
@@ -68,12 +67,12 @@ export default function ScrubHero() {
     }
 
     function drawFrame(i: number) {
+      ctx.fillStyle = "#fff"; ctx.fillRect(0, 0, cw, ch);
       const img = images[clamp(i, 0, FRAME_COUNT - 1)];
       if (!img || !img.complete) return;
       const scale = Math.max(cw / imgW, ch / imgH);
       const w = imgW * scale, h = imgH * scale;
       const x = (cw - w) / 2, y = (ch - h) / 2;
-      ctx.fillStyle = "#000"; ctx.fillRect(0, 0, cw, ch);
       ctx.drawImage(img, x, y, w, h);
     }
 
@@ -115,7 +114,6 @@ export default function ScrubHero() {
         el.style.opacity = o.toFixed(3);
         el.style.transform = `translateY(${(1 - o) * 14}px)`;
       }
-      if (scrollCueRef.current) scrollCueRef.current.style.opacity = (scrub < 0.04 ? 1 : 0).toString();
 
       raf = requestAnimationFrame(tick);
     }
@@ -175,7 +173,6 @@ export default function ScrubHero() {
                 </h1>
                 <div className="scue-foot">
                   <p>Whole-home design and architecture for the few who notice everything — with a first concept in 48 hours.</p>
-                  <a href="#work" className="hero-cta magnetic">See the work <span>→</span></a>
                 </div>
               </div>
             </div>
@@ -198,11 +195,8 @@ export default function ScrubHero() {
               <div className="scue-in" ref={(el) => { cueRefs.current[3] = el; }}>
                 <p className="cap-ey">By appointment · Dubai</p>
                 <p className="cap big">Now, imagine it <em>yours.</em></p>
-                <a href="#contact" className="hero-cta magnetic" style={{ marginTop: 22 }}>Book a private consultation <span>→</span></a>
               </div>
             </div>
-
-            <div className="scrollcue" ref={scrollCueRef}><span>Scroll to walk through</span><i /></div>
           </div>
         </div>
       </div>
