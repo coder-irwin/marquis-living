@@ -10,7 +10,6 @@ import { useEffect, useRef } from "react";
 const FRAME_COUNT = 240;
 const FRAME_PATH = (i: number) => `/design25/frames/frame_${String(i).padStart(4, "0")}.jpg`;
 
-const TOUR_VH = 360;
 const SHRINK_SCALE = 0.88;
 const SHRINK_RADIUS = 16;
 
@@ -157,7 +156,7 @@ export default function ScrubHero() {
 
   return (
     <header className="hero-scrub" id="hero">
-      <div className="scrub-tour" ref={tourRef} style={{ height: `${TOUR_VH}vh` }}>
+      <div className="scrub-tour" ref={tourRef}>
         <div className="scrub-stage" ref={stageRef}>
           <div className="scrub-frame" ref={frameRef}>
             <canvas ref={canvasRef} />
